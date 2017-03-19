@@ -85,7 +85,7 @@ h4{
     padding:10px;
 }
 
-a{
+.buttonsContainer a{
     color:white;
     background:#666;
     display:inline-block;
@@ -101,11 +101,11 @@ a{
     transition: color 0.2s ease-out;
 }
 
-a:hover{
+.buttonsContaine a:hover{
     background: black;
 }
 
-a:active{
+.buttonsContaine a:active{
     background: black;
 }
 
@@ -218,4 +218,34 @@ a > div{
 
 .fixedHeader .linkText{
     display:none;
+}
+
+/*Links*/
+
+.githubLogo{
+    background: transparent;
+    background-image: url('../img/githubLogo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display:block;
+    position:absolute;
+    width:32px;
+    height:32px;
+    top:10px;
+    right:10px;
+}
+
+.twitterLogo{   
+    background: transparent;
+    background-image: url('../img/twitterLogo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display:block;
+    position:absolute;
+    width:32px;     
+    height:32px;
+    top:10px;
+    right:60px;
 }
