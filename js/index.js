@@ -74,3 +74,13 @@ var startTaglines = (function () {
 window.addEventListener("load", function () {
     startTaglines();
 });
+
+window.addEventListener('scroll', function () {
+    if (window.pageYOffset - window.innerHeight * 0.8 > -200) {
+        document.getElementById("splashPage").classList.add("fixedHeader");
+    }
+
+    if (window.pageYOffset - window.innerHeight * 0.8 < -200) {
+        document.getElementById("splashPage").classList.remove("fixedHeader");
+    }
+});

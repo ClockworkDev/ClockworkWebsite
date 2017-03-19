@@ -1,5 +1,6 @@
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #DDD;
 }
 
 #splashPage{
@@ -11,6 +12,8 @@ body{
     height:80%;
     margin:0px;
     padding:0px;
+    box-shadow: 0 0 10 3 #333;
+    background-color: white;
 }
 
 #clockworkLogo{
@@ -84,7 +87,7 @@ h4{
 
 a{
     color:white;
-    background:#333;
+    background:#666;
     display:inline-block;
     margin-left: 10px;
     padding:15px;
@@ -137,7 +140,7 @@ a > div{
     }
     h3{
         padding-top:20px;
-        height:75px;
+        height:60px;
         font-size: 25px;
     }
     h4{
@@ -145,9 +148,74 @@ a > div{
     }
     a{
         display:block;
-        max-width:500px;
     }
     a > div{
         color:white;
     }
+}
+
+#content{
+    position:absolute;
+    display:block;
+    left:0px;
+    top:90%;
+    width:100%;
+    height:280%;
+    margin:0px;
+    padding:0px;
+}
+
+ /*Fixed header*/
+.fixedHeader{
+    position:fixed !important;
+    height:200px !important;
+}
+
+.fixedHeader #clockworkLogo{
+    top:25px;
+    left:20px;
+    width:150px;
+    height:150px;
+}
+
+.fixedHeader #header{
+   top:10%;
+   width:calc( 100% - 200px );
+   height:80%;
+   left:200px;
+}
+
+.fixedHeader h1{
+    font-size: 60px;  
+    margin:0px;
+}
+
+.fixedHeader h3{
+    margin-left:0px;
+}
+
+.fixedHeader h2{
+   display:none;
+}
+
+.fixedHeader h4{
+   display:none;
+}
+
+.fixedHeader a{
+    width:50px;
+    display:inline;
+}
+
+.fixedHeader .buttonsContainer{
+    display:block;
+    position:absolute;
+    right:10px;
+    top:10%;
+    min-width:100px;
+}
+
+
+.fixedHeader .linkText{
+    display:none;
 }
