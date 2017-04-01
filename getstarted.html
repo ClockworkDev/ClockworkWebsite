@@ -3,15 +3,14 @@
 <head>
     <title>Clockwork</title>
     <link rel="stylesheet" href="css/style.css" />
-    <script src="js/index.js"></script>
     <script src="js/taglines.js"></script>
 </head>
 
 <body>
-    <div id="splashPage">
+    <div id="splashPage" class="fixedHeader">
         <div id="clockworkLogo"></div>
         <div id="header">
-            <h1>Clockwork</h1>
+            <h1><a href="index.html">Clockwork</a></h1>
             <h3 id="tagline">>The game engine that doesn’t grind your gears</h3>
             <h2>An open platform for developing HTML5 games based on modular components.</h2>
             <h4>If you want to know why you should choose Clockwork, just keep scrolling!</h4>
@@ -27,40 +26,41 @@
         <a class="twitterLogo" href="https://twitter.com/clockworkjs"></a>
         <a class="githubLogo" href="https://github.com/clockworkDev"></a>
     </div>
-    <div id="content">
+    <div id="contentSection">
         <div class="feature">
-            <img src="img/puzzle.png" />
+            <img src="img/tools.png" />
             <div class="featureDescription">
-                <h3>Open</h3>
-                Aside from being open source, every single piece of Clockwork is modular and replaceable. Feel free to mix and match rendering libraries, physics, input, native APIs… or just write your own!
+                <h3>1 - Get the tools</h3>
+                Install <a href="https://code.visualstudio.com/">Visual Studio Code</a> and add the <a href="https://marketplace.visualstudio.com/items?itemName=arcadio.clockwork">Clockwork extension</a>. You will also need to download <a href="https://www.microsoft.com/store/apps/9mt9ntllrqsr?cid=ClockworkWebsite">Clockwork Runtime</a> from the Windows Store.
             </div>
         </div>
         <div class="feature">
             <img src="img/tools.png" />
             <div class="featureDescription">
-                <h3>Well equipped</h3>
-                Clockwork provides an end-to-end developer-friendly experience, designed specifically for game development, including its own tools, debugger, package manager... Forget about F12! 
+                <h3>2 - Create a project</h3>
+                Open an empty folder and create a Clockwork project (press F1 > 'Create Clockwork Project').
             </div>
         </div>
         <div class="feature">
-            <img src="img/messages.png" />
+            <img src="img/tools.png" />
             <div class="featureDescription">
-                <h3>Elegant</h3>
-                The engine is designed around message passing, thus being great for creating easy to maintain game logic and sharing code through composition and inheritance.
+                <h3>3 - Deploy your project</h3>
+                Deploy your project to the Clockwork Runtime (press F1 > 'Deploy Clockwork Project').
             </div>
         </div>
         <div class="feature">
-            <img src="img/fun.png" />
+            <img src="img/tools.png" />
             <div class="featureDescription">
-                <h3>Fun</h3>
-                Other engines and frameworks try to minimize the amount of code you have to write at the expense of limiting your freedom, while Clockwork is designed for people who love coding and provides an elegant but powerful API.
+                <h3>4 - Work on your project</h3>
+                It's time to get your hands dirty! You can start editing the components, levels and spritesheets to build your game.
             </div>
         </div>
         <div class="feature">
-            <img src="img/standard.png" />
+            <img src="img/tools.png" />
             <div class="featureDescription">
-                <h3>Standard</h3>
-                Clockwork plays nice with vanilla JavaScript (and even HTML and CSS if you want to!), uses common formats such as JSON or XML and tries to build on top of standards like the web app manifest.
+                <h3>5 - Debug your game</h3>
+                Clockwork plays nice with vanilla JavaScript (and even HTML and CSS if you want to!), uses common formats such as JSON or
+                We all make mistakes, but don't worry, finding bugs is easier than ever. Set some breakpoints and press F5 to start debugging your game.
             </div>
         </div>
     </div>

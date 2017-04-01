@@ -5,7 +5,7 @@ body{
     margin:0px;
 }
 
-a{
+#splashPage a{
     text-decoration: none;
     color:black;
 }
@@ -167,6 +167,19 @@ a > div{
     display:block;
     left:0px;
     top:90%;
+    width:100%;
+    margin:0px;
+    padding:0px;
+    text-align: center;
+    perspective: 1000px;
+    padding-bottom: 200px;
+}
+
+#contentSection{
+    position:absolute;
+    display:block;
+    left:0px;
+    top:250px;
     width:100%;
     margin:0px;
     padding:0px;
