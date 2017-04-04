@@ -4,18 +4,19 @@
     <title>Clockwork</title>
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/taglines.js"></script>
+    <script src="js/documentation.js"></script>
     <script>
         (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date(); a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
         })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
         ga('create', 'UA-96597717-1', 'auto');
         ga('send', 'pageview');
-
     </script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 </head>
 
 <body>
@@ -39,7 +40,28 @@
         <a class="githubLogo" href="https://github.com/clockworkDev"></a>
     </div>
     <div id="contentSection">
-
+        <div id="documentationPages">
+            <span style="color:red;">This documentation is a work in progress</span>
+            <ul>
+                <li><a onclick="loadDocumentationPage(this.dataset.target)" data-target="projectStructure" href="#">Project structure</a></li>
+                <li><a onclick="loadDocumentationPage(this.dataset.target)" data-target="manifest" href="#">Manifest</a></li>
+                <li><a onclick="loadDocumentationPage(this.dataset.target)" data-target="components" href="#">Components</a></li>
+                <ul>
+                    <li><a onclick="loadDocumentationPage(this.dataset.target)" data-target="events" href="#">Events</a></li>
+                    <li><a onclick="loadDocumentationPage(this.dataset.target)" data-target="inheritance" href="#">Inheritance</a></li>
+                    <li><a onclick="loadDocumentationPage(this.dataset.target)" data-target="collisions" href="#">Collisions</a></li>
+                </ul>
+                <li><a onclick="loadDocumentationPage(this.dataset.target)" data-target="spritesheets" href="#">Spritesheets</a></li>
+                <li><a onclick="loadDocumentationPage(this.dataset.target)" data-target="levels" href="#">Levels</a></li>
+                <li><a onclick="loadDocumentationPage(this.dataset.target)" data-target="tools" href="#">Tools</a></li>
+                <ul>
+                    <li><a onclick="loadDocumentationPage(this.dataset.target)" data-target="cli" href="#">CLI tools</a></li>
+                    <li><a onclick="loadDocumentationPage(this.dataset.target)" data-target="vsce" href="#">VS Code Extension</a></li>
+                </ul>
+                <li><a onclick="loadDocumentationPage(this.dataset.target)" data-target="advancedTopics" href="#">Advanced topics</a></li>
+            </ul>
+        </div>
+        <div id="documentationContent"></div>
     </div>
 </body>
 

@@ -100,10 +100,10 @@ h4{
     margin-left: 10px;
     padding:15px;
     text-decoration: none;
-    font-size:40px;
+    font-size:30px;
     vertical-align: middle;
-    height:40px;
-    line-height: 40px;
+    height:30px;
+    line-height: 30px;
     overflow: hidden;
     margin-bottom:10px;
     transition: color 0.2s ease-out;
@@ -392,4 +392,24 @@ a > div{
         opacity: 1;
         margin-top:0;
     }
+}
+
+#documentationPages{
+        width:30%;
+        display:inline-block;
+        text-align:left;
+        vertical-align: top;
+        padding:20px;
+}
+
+#documentationPages ul{
+    list-style-type: none;
+}
+
+#documentationContent{
+        width:60%;
+        display:inline-block;
+        text-align:left;
+        vertical-align: top;
+        margin:20px;
 }

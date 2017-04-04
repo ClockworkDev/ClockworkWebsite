@@ -1,0 +1,44 @@
+The manifest is a JSON file that can be found at the root of any project and contains basic information about the game.
+Here you have the manifest from the starter project:
+
+<pre class="prettyprint lang-js">
+    {
+    "name": "gameName",
+    "scope": "gameFiles",
+    "components": [
+        "components.js"
+    ],
+    "levels": [
+        "levels.xml"
+    ],
+    "spritesheets":[
+        "spritesheets.xml"
+    ],
+    "screenResolution": {
+        "w": 1366,
+        "h": 768
+    },
+    "dependencies": {},
+    "themeColor":"#4B5",
+    "backgroundColor":"#333",
+    "tileIcon":"tileIcon.png",
+    "enginefps": 60,
+    "animationfps": 60
+}
+</pre>
+
+These are the different properties of the manifest:
+<ul>
+    <li><code>name</code>: the name of the game.</li>
+    <li><code>scope</code>: the subfolder where the game files are located. Every file inside will be included in the game package.</li>
+    <li><code>components</code>: the list of the .js files containing the components.</li>
+    <li><code>levels</code>: the list of the files containing the levels, they can be in either .xml or .json files.</li>
+    <li><code>spritesheets</code>: the list of the files containing the spritesheets, they can be in either .xml or .json format.</li>
+    <li><code>screenResolution</code>: the resolution at which the game will be rendered.</li>
+    <li><code>dependencies</code>: the dependencies that your game needs, they will be pulled from the Clockwork Package Manager.</li>
+    <li><code>themeColor</code>: the color that should be used in your game icon, listings...</li>
+    <li><code>backgroundColor</code>: the background color udisplayed behind your game  when it is running.</li>
+    <li><code>tileIcon</code>: a png image used as the icon for your game.</li>
+    <li><code>enginefps</code>: the number of times per second the #loop event will happen in the engine.</li>
+    <li><code>animationfps</code>: the number of times per second the game will be rendered.</li>
+</ul>

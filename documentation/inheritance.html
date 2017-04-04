@@ -1,0 +1,19 @@
+<p>
+    Components can have a <code>inherits</code> property that may have different values:
+</p>
+<code class="prettyprint lang-js">
+        inherits: "baseComponent"
+</code>
+<p>
+    When component A inherits from a single component (B) , A will inherit the spritesheet, events, collisions, variables and event handlers from B, unless A overrides them. This allows you to replicate the classic inheritance model to create a component hierarchy.
+</p>
+<code class="prettyprint lang-js">
+        inherits: ["baseComponent1", "baseComponent2"]
+</code>
+<p>
+    When a component A inherits from many components ([B1,B2,B3,...]) all of them will be agregated together using composition.
+    That means that all events will be agregated ( e.g. the resulting #setup event handler will be the result of executing all the individual #setup event handlers from B1,B2... secuentially) into a 'virtual' component A', and then A will inherit from A' as in the previous case. This allows you to use the composition pattern which is perfect for videogames development.
+</p>
+<p>
+    As you can see, you have two powerful techniques at your disposal: inheritance and composition, you can mix and match them to create elegant patterns and reuse your code as much as possible.
+</p>

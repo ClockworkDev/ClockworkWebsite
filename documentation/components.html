@@ -1,0 +1,68 @@
+<p>
+    Components are like blueprints of the objects that you will later instantiate in your game: you can create a component for
+    an enemy and then place hundreds of them in the level, or you can create an abstract component that will never be spawned.
+</p>
+<p>
+    Each component has event listeners that will be triggered when some event happens, either to itself or to the whole level.
+    It also has its own variables and colliders (those specify the hitboxes -except that they don't need to be boxes- of an object). If
+    it should be rendered, it will also be associated with an spritesheet.
+</p>
+<p>
+    You dont have to cram all the functionality of an specific type of object in a single component, actually you are encouraged
+    to write 'minimal' components that encapsulate a specific behavior, and then use combine those components in your game
+    objects and then use both the composition and inheritance pattern to create new components.
+</p>
+<p>
+    Let's have a look at the component syntax:
+</p>
+<pre class="prettyprint lang-js">
+    {
+        name: "componentName",
+        sprite: "spritesheetName",
+        inherits: ["baseComponent1", "baseComponent2"],
+        events: [
+            {
+                name: "#setup", code: function (event) {
+                    //This code is executed when the object is spawned
+                }
+            },
+            {
+                name: "#loop", code: function (event) {
+                    //This code is executed every frame
+                }
+            }],
+        collision: {
+            box: [
+                { "#tag": "myBoundingBox", x: 0, y: 0, w: 100, h: 100 },
+            ]
+        },
+        vars: [
+            { name: "isThisADemoComponent", value: true }
+        ]
+    }
+</pre>
+<p>
+    As you can see, those are the properties that define a component:
+    <ul>
+        <li><code>name</code>: Specifies the preset name, it must be unique.</li>
+        <li><code>sprite</code>: Specifies the spritesheet used to render the object.</li>
+        <li><code>inherits</code>: A component can inherit from either a single component or a list of them.</li>
+        <li><code>events </code>: The event handlers will contain all the logic of your game, they are functions that will be executed when some event happens.</li>
+        <li><code>collision </code>:  Specifies the shapes that will act as hitboxes.</li>
+        <li><code>vars </code>: Any variable that the object may need. You can also set them in the code, but if you define them here you can easily inherit and modify the values.</li>
+    </ul>
+</p>
+<p>
+    In order to register your components so they can be later used (spawned or inherited from), you will need to register them, using this function:
+</p>
+<pre class="prettyprint lang-js">
+    CLOCKWORKRT.components.register([
+    {
+        //Component1
+    },
+    {
+        //Component2
+    },
+    ...
+    ]);
+</pre>
