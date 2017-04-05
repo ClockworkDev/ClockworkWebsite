@@ -1,0 +1,35 @@
+<p>
+    All the logic of your game will be inside the event handlers, which are functions that belong to an object and are executed
+    when some event happens. They may modify the object itself and create more events, thus altering the state of your game.
+</p>
+<p>
+    There are three events that happen automatically in every Clockwork game and :
+</p>
+<ul>
+    <li>
+        <code>#setup</code>: Every object receives this event when it is spawned
+    </li>
+    <li>
+        <code>#loop</code>: This event is executed on every object on every frame
+    </li>
+    <li>
+        <code>#collide</code>: Whenever a collision is detected, this event is received on the objects colliding
+    </li>
+</ul>
+<p>
+    When an object receives an event, if it has the corresponding event handler it will be executed. An event handler looks like
+    this:
+</p>
+<pre class="prettyprint lang-js">
+        {
+            name: "#setup", code: function (data) {
+                //This code is executed when the object is spawned
+            }
+        }
+</pre>
+<p>
+    As you can see, it is a JavaScript function inside which you can do whatever you want, and the event might have some data associated that you will receive as the argument.
+</p>
+<p>
+    In order to modify the object or interact with the engine you can use the  <a onclick="loadDocumentationPage(this.dataset.target)" data-target="componentAPI" href="#">Component API</a>.
+</p>
