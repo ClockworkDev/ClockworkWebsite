@@ -413,3 +413,7 @@ a > div{
         vertical-align: top;
         margin:20px;
 }
+
+#documentationContent li{
+    margin-top:15px;
+}

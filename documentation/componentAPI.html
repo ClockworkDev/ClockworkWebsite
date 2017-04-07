@@ -1,0 +1,68 @@
+<p>
+    Inside event handlers you will write the logic of your game, and in order to interact with the engine you have a set of properties
+    and functions exposed via <code>this</code>, which always refers to the object receiving the event. <code>this</code>    has the following properties:
+</p>
+<ul>
+    <li><code>do</code>: This allows you to send an event to the current object. For example:
+        <pre class="prettyprint lang-js">this.do.collectCoin({value:100});</pre> Will execute the <code>collectCoin</code> event in the current object, receiving <code>{value:100}</code> as the
+        parameter.
+    </li>
+    <li><code>var</code>: This hold all the local variables of the current object, for example:
+        <pre class="prettyprint lang-js">this.var.$x += this.var.vx;</pre> This code will read the speed in the x axis of the object and add it to the current x position. There are several
+        variables which are already used by the engine and you can read and write:
+        <ul>
+            <li><code>$x</code>: This is the position of the object in the x axis</li>
+            <li><code>$y</code>: This is the position of the object in the y axis</li>
+            <li><code>$z</code>: This is the position of the object in the z axis</li>
+            <li><code>$state</code>: The state in which the object will be rendered (e.g. running, idle, attacking)</li>
+        </ul>
+        As you can see, these variables all start with $. This is because any variable starting with $ will be made accessible to
+        the rendering library so it can be used when rendering the object. Variable names starting with # are reserved for
+        internal engine use and thus you should not use them.
+    </li>
+    <li><code>engine</code>: This is a reference to the whole engine and has these properties:
+        <ul>
+            <li><code>do</code>: This works just like <code>this.do</code>, but will send the event to all the object in the
+                levels.
+            </li>
+            <li><code>var</code>: This works just like <code>this.var</code>, but will store global variables that any object
+                can access, and their value will be preserved across levels.
+            </li>
+            <li><code>setLoader</code>: This allows you to set a loading screen that will be shown between levels. You can find
+                more information in the <a onclick="loadDocumentationPage(this.dataset.target)" data-target="loaders" href="#">loaders</a>                section.
+            </li>
+            <li><code>fps</code>: This function returns the frames per second at which the engine is running.
+            </li>
+            <li><code>find</code> : This function searches for an object in the current level whose name matches the string provided,
+                and returns it. For example:
+                <pre class="prettyprint lang-js">var mainCharacter =  this.engine.find("Papyrus");</pre>
+            </li>
+            <li><code>getObject</code> : This function returns the object that matches a given handler. For example:
+                <pre class="prettyprint lang-js">var mainCharacter =  this.engine.getObject(someHandler);</pre>
+            </li>
+            <li><code>getAnimationEngine</code> : This function returns a reference to the rendering library so you can manually
+                call its methods.
+            </li>
+            <li><code>addObjectLive </code> :This function spawns a new object in the current level. For example:
+                <pre class="prettyprint lang-js">//TODO : Update with new function</pre>
+            </li>
+            <li><code>deleteObjectLive </code> : Given an object as its parameter, this function will delete it from the current
+                level.
+            </li>
+            <li><code>listObjects </code> : This function will return a list of all the objects in the current level.
+            </li>
+            <li><code>loadLevel</code> : This function will load the level specified by its parameter, which is a number. For
+                example, <code class="prettyprint lang-js">this.engine.loadLevel(0);</code> will load the first level.
+            </li>
+            <li><code>loadLevelByID  </code> : This function will load the level specified by its parameter, which is a string.
+                For example, <code class="prettyprint lang-js">this.engine.loadLevelByID("tutorial");</code> will load the
+                level named "tutorial".
+            </li>
+            <li><code>reloadLevel</code> : This function will reload the current level.
+            </li>
+        </ul>
+    </li>
+</ul>
+<p>
+    The <code>engine</code> object exposes more methods, but you should not need them unless you have very specific needs since they take care of the functionality that is already handled by the Clockwork Runtime. You can find them <a onclick="loadDocumentationPage(this.dataset.target)" data-target="advancedComponentAPI" href="#">here</a>.
+</p>
