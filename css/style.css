@@ -376,6 +376,19 @@ a > div{
     height: calc( 90% - 300px );
     background-position: center;
     background-size: contain;
+    background-repeat: no-repeat;
+    visibility:hidden;
+}
+
+.breakdownImageTall{
+    position:fixed;
+    left:20px;
+    top:0;
+    width:calc( 30% - 20px );
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat-y;
     visibility:hidden;
 }
 
