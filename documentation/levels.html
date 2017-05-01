@@ -1,1 +1,28 @@
-//TODO
+Levels are XML files which specify when and where will be the objects instantiated, allowing you to divide your game in independient
+screens and instantiate the desired components in each one:
+<pre class="prettyprint lang-xml">
+&lt;levels&gt;
+  &lt;level id="someName"&gt;
+    &lt;object name="someName" type="someComponent" x="100" y="100" z="2" vars='{"w":90}'&gt;&lt;/object&gt;
+	...
+  &lt;/level&gt;
+  ...
+&lt;/levels&gt;
+</pre>
+You can specify as many levels as you want, and they must have unique names. When you load a level, all the objects that
+it contains will be instantiated:
+<ul>
+    <li>
+        name : Specifies a unique name for the object that will allow you to reference it from other objects.
+    </li>
+    <li>
+        type : Specifies the component used to create the object.
+    </li>
+    <li>
+        x, y, z: Specify the coordinates of the object. Z is not mandatory, but recomended even in 2d games to control the order
+        in which objects are drawn.
+    </li>
+    <li>
+        vars : JSON string containing variables to add to the object, they will be added to or overwrite the component variables.
+    </li>
+</ul>
