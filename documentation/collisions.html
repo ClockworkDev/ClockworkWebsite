@@ -1,1 +1,22 @@
-//TODO
+<p>
+    Components can declare collisions, which are objects that will act as hitboxes. You can mix and match different collision types (points, boxes,cubes, polygons...) inside the <code>collision</code> object, each one will be represented as an array of objects, like this:
+</p>
+<pre class="prettyprint lang-js">
+    collision: {
+            point: [
+                { "#tag": "characterFeet", x: 0, y: 0},
+            ],
+            rectangle: [
+                { "#tag": "bodyCollision", x: -50, y: -100, w: 100, h: 100 },
+            ]
+    }
+</pre>
+<p>
+    As you can see, each collision object has the following fields:
+    <ul>
+        <li><code>#tag</code>: this is an unique indentifier that will allow you to use to modify your collider from your code.</li>
+        <li><code>x</code>: The x position of the collision object, relative to the object position.</li>
+        <li><code>y</code>: The y position of the collision object, relative to the object position.</li>
+        <li>There can be more fields, depending on the type of the coliision object.</li>
+    </ul>
+</p>
