@@ -1,0 +1,80 @@
+Spritesheet.js is a library designed for rendering 2D spritesheet based games. In order to be rendered, objects have to be
+associated to a spritesheet, that will specify how to draw them.
+
+
+<p>There are four levels to consider when designing a spritesheet:</p>
+
+<ul>
+    <li>
+        <strong>Frames</strong>
+        <ul>
+            <li>Frames are just squares cropped from the image, and therefore are defined by
+
+                <ul>
+                    <li>X position</li>
+                    <li>Y position</li>
+                    <li>Width</li>
+                    <li>Height</li>
+                    <li>A frame duration (t) must also be specified, it indicates how long will that frame be shown in the screen.
+                        A duration of 0 means that that frame will be shown as long as the animation continues.</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <strong>Layers</strong>
+
+        <ul>
+            <li>Layers are ordered sets of frames that are displayed one after the other. Therefore they are defined by a list
+                of frames, and they can also be moved specifying two functions: x(t) and y(t)</li>
+        </ul>
+    </li>
+    <li>
+        <strong>States</strong>
+
+        <ul>
+            <li>States are a set of layers that are displayed at the same time on the screen, overlaying if necessary. Therefore
+                they are just a list of layers.</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Spritesheet</strong>
+
+        <ul>
+            <li>Spritesheets are the set of states, plus all of their associated layers and frames, and the image from which
+                the frames should be extracted.</li>
+        </ul>
+    </li>
+</ul>
+
+<p>For example, when animating a person walking, there could be two states: "Idle" and "Walking". Each state could be formed
+    by several layers: "Body", "Arms", "Legs", and some layers could be reused in both states. Each layer could have several
+    frames with the sucessive steps of the animation. Finally, the spritesheet should contain all of them, plus a reference
+    to "someone_walking.png". </p>
+
+
+<p>A XML file can describe one or multiple spritesheets and has the following structure:</p>
+
+<pre class="prettyprint lang-xml">&lt;<span class="pl-ent">spritesheets</span>&gt;
+ &lt;<span class="pl-ent">spritesheet</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>Something<span class="pl-pds">"</span></span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>path/something.png<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">states</span>&gt;
+      &lt;<span class="pl-ent">state</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>State1<span class="pl-pds">"</span></span>&gt;
+        &lt;<span class="pl-ent">layer</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>Layer1<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">layer</span>&gt;
+        ...
+      &lt;/<span class="pl-ent">state</span>&gt;
+      ...
+    &lt;/<span class="pl-ent">states</span>&gt;
+    &lt;<span class="pl-ent">layers</span>&gt;
+       &lt;<span class="pl-ent">layer</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>Layer1<span class="pl-pds">"</span></span> <span class="pl-e">x</span>=<span class="pl-s"><span class="pl-pds">"</span>0<span class="pl-pds">"</span></span> <span class="pl-e">y</span>=<span class="pl-s"><span class="pl-pds">"</span>0<span class="pl-pds">"</span></span>&gt;
+        &lt;<span class="pl-ent">frame</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>Frame1<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">frame</span>&gt;
+        ...
+      &lt;/<span class="pl-ent">layer</span>&gt;
+      ...
+    &lt;/<span class="pl-ent">layers</span>&gt;
+    &lt;<span class="pl-ent">frames</span>&gt;
+      &lt;<span class="pl-ent">frame</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>Frame1<span class="pl-pds">"</span></span> <span class="pl-e">x</span>=<span class="pl-s"><span class="pl-pds">"</span>0<span class="pl-pds">"</span></span> <span class="pl-e">y</span>=<span class="pl-s"><span class="pl-pds">"</span>0<span class="pl-pds">"</span></span> <span class="pl-e">w</span>=<span class="pl-s"><span class="pl-pds">"</span>100<span class="pl-pds">"</span></span> <span class="pl-e">h</span>=<span class="pl-s"><span class="pl-pds">"</span>50<span class="pl-pds">"</span></span> <span class="pl-e">t</span>=<span class="pl-s"><span class="pl-pds">"</span>30<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">frame</span>&gt;
+      ...
+    &lt;/<span class="pl-ent">frames</span>&gt;
+  &lt;/<span class="pl-ent">spritesheet</span>&gt;
+  ...
+&lt;/<span class="pl-ent">spritesheets</span>&gt;</pre>
