@@ -3,7 +3,7 @@
     when some event happens. They may modify the object itself and create more events, thus altering the state of your game.
 </p>
 <p>
-    There are three events that happen automatically in every Clockwork game and :
+    These are the three basic events that are received automatically by every object and you can implement:
 </p>
 <ul>
     <li>
@@ -14,6 +14,9 @@
     </li>
     <li>
         <code>#collide</code>: Whenever a collision is detected, this event is received on the objects colliding
+    </li>
+    <li>
+        <code>#exit</code>: This event is executed on an object before it is destroyed (manually or by loading a new level)
     </li>
 </ul>
 <p>
@@ -28,8 +31,9 @@
         }
 </pre>
 <p>
-    As you can see, it is a JavaScript function inside which you can do whatever you want, and the event might have some data associated that you will receive as the argument.
+    As you can see, it is a JavaScript function inside which you can do whatever you want, and the event might have some data
+    associated that you will receive as the argument.
 </p>
 <p>
-    In order to modify the object or interact with the engine you can use the  <a onclick="loadDocumentationPage(this.dataset.target)" data-target="componentAPI" href="#">Component API</a>.
+    In order to modify the object or interact with the engine you can use the <a onclick="loadDocumentationPage(this.dataset.target);return false;" data-target="objectAPI" href="#">Object API</a>.
 </p>

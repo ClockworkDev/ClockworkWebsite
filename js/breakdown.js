@@ -3,7 +3,7 @@ var pages = [
     { component: "ClockworkCore", connector: " is the ", clockPart: "CLOCKWORK MOTOR", description: "Found inside every game, it is responsible for providing the core functionality that it needs to run." },
     { component: "Components", connector: " are the ", clockPart: "GEARS", description: "Writen by you or downloaded from the Clockwork Package Manager, they define how the element in your game will behave." },
     { component: "ClockworkRuntime", connector: " is the ", clockPart: "CASE", description: "It holds all the pieces of your game inside and provides an external interface so it can be put anywhere." },
-    { component: "Rendering libraries", connector: " are the ", clockPart: "FACES", description: "It is the resposible of displaying your game to the user, the default one is Spritesheet.js but it can be easily swapped." },
+    { component: "Rendering libraries", connector: " are the ", clockPart: "FACES", description: "They are responsible for displaying your game to the user, the default one is Spritesheet.js but it can be easily swapped." },
     { component: "Packaged app", connector: " is the ", clockPart: "WRISTBAND", description: "It allows you to carry your game everywhere easily, and there are many options depending on your platform of choice." },
     { component: "Clockwork CLI Tools & Clockwork extension", connector: " are the ", clockPart: "TWEEZERS", description: "Every job is easier when you have the right tools, and the NPM clockwork-tools package and the Clockwork VS Code extension are built to make you productive like a boss!" },
 ];

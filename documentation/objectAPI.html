@@ -20,49 +20,57 @@
         the rendering library so it can be used when rendering the object. Variable names starting with # are reserved for
         internal engine use and thus you should not use them.
     </li>
+    <li><code>spriteholder</code>: This is a handler for the sprite used by the rendering library to render the object, it can
+        be used to manually call the rendering library methods.
+    </li>
     <li><code>engine</code>: This is a reference to the whole engine and has these properties:
         <ul>
             <li><code>do</code>: This works just like <code>this.do</code>, but will send the event to all the object in the
                 levels.
             </li>
             <li><code>var</code>: This works just like <code>this.var</code>, but will store global variables that any object
-                can access, and their value will be preserved across levels.
+                can access, and their value will be preserved across levels. There are several variables which are already
+                used by the engine and you can read and write:
+                <ul>
+                    <li><code>$cameraX</code>: This is the position of the camera in the x axis</li>
+                    <li><code>$cameraY</code>: This is the position of the camera in the y axis</li>
+                    <li><code>$cameraZ</code>: This is the position of the camera in the z axis</li>
+                    <li><code>#currentLevel</code>: This is the name of the current level</li>
+                    <li><code>#DOM</code>: A reference to the canvas element used to render the game</li>
+                </ul>
             </li>
             <li><code>setLoader</code>: This allows you to set a loading screen that will be shown between levels. You can find
-                more information in the <a onclick="loadDocumentationPage(this.dataset.target)" data-target="loaders" href="#">loaders</a>                section.
+                more information in the <a onclick="loadDocumentationPage(this.dataset.target);return false;" data-target="loaders">loaders</a>                section.
             </li>
-            <li><code>fps</code>: This function returns the frames per second at which the engine is running.
+            <li><code>getFPS</code>: This function returns the frames per second at which the engine is running.
             </li>
             <li><code>find</code> : This function searches for an object in the current level whose name matches the string provided,
                 and returns it. For example:
                 <pre class="prettyprint lang-js">var mainCharacter =  this.engine.find("Papyrus");</pre>
             </li>
-            <li><code>getObject</code> : This function returns the object that matches a given handler. For example:
-                <pre class="prettyprint lang-js">var mainCharacter =  this.engine.getObject(someHandler);</pre>
-            </li>
-            <li><code>getAnimationEngine</code> : This function returns a reference to the rendering library so you can manually
+            <li><code>getRenderingLibrary</code> : This function returns a reference to the rendering library so you can manually
                 call its methods.
             </li>
-            <li><code>addObjectLive </code> :This function spawns a new object in the current level. For example:
-                <pre class="prettyprint lang-js">//TODO : Update with new function</pre>
+            <li><code>spawn </code> :This function spawns a new object in the current level and return it. For example:
+                <pre class="prettyprint lang-js">var newObject= this.engine.spawn("objectName", "component", {$x:0, $y:0, health:20});</pre>
             </li>
-            <li><code>deleteObjectLive </code> : Given an object as its parameter, this function will delete it from the current
+            <li><code>destroy </code> : Given an object as its parameter, this function will delete it from the current
                 level.
             </li>
             <li><code>listObjects </code> : This function will return a list of all the objects in the current level.
             </li>
-            <li><code>loadLevel</code> : This function will load the level specified by its parameter, which is a number. For
-                example, <code class="prettyprint lang-js">this.engine.loadLevel(0);</code> will load the first level.
-            </li>
-            <li><code>loadLevelByID  </code> : This function will load the level specified by its parameter, which is a string.
+            <li><code>loadLevel  </code> : This function will load the level specified by its parameter, which is a string.
                 For example, <code class="prettyprint lang-js">this.engine.loadLevelByID("tutorial");</code> will load the
                 level named "tutorial".
             </li>
-            <li><code>reloadLevel</code> : This function will reload the current level.
+            <li><code>collisionQuery  </code> : This function will perform a collision query of the specified collider against all the objects in the level and return an array of the ones that collide.
+                For example, <pre class="prettyprint lang-js">this.engine.collisionQuery("box", { "x": 0, "y": 0, "w": 100, "h": 100 });</pre> will return the list of objects that collide with that box.
             </li>
         </ul>
     </li>
 </ul>
 <p>
-    The <code>engine</code> object exposes more methods, but you should not need them unless you have very specific needs since they take care of the functionality that is already handled by the Clockwork Runtime. You can find them <a onclick="loadDocumentationPage(this.dataset.target)" data-target="advancedComponentAPI" href="#">here</a>.
+    The <code>engine</code> object exposes more methods, but you should not need them unless you have very specific needs
+    since they take care of the functionality that is already handled by the Clockwork Runtime. You can find them <a onclick="loadDocumentationPage(this.dataset.target);return false;"
+        data-target="advancedComponentAPI">here</a>.
 </p>

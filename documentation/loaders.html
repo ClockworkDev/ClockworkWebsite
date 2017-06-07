@@ -1,1 +1,65 @@
-//TODO
+<p>
+    By default there will be no loading screen between levels, but you can use loaders: they are objects provided by the developer
+    that manage the loading screen.
+</p>
+<p>
+    They must expose two methods, show and hide. This would be a sample loader:
+</p>
+<pre class="prettyprint lang-js">
+var defaultLoader = (function () {
+    var div = document.createElement("div");
+    div.style.height = '100%';
+    div.style.width = '100%';
+    div.style.display = 'block';
+    div.style.position = 'absolute';
+    div.style.backgroundColor = "black";
+    div.style.color = "white";
+    div.style.textAlign = "center";
+    div.style.paddingTop ="40%";
+    div.innerHTML = "Loading";
+    div.style.top = '0px';
+    div.style.left = '0px';
+    document.body.appendChild(div);
+    return {
+        show: function () {
+            div.style.visibility = "visible";
+        },
+        hide: function () {
+            div.style.visibility = "hidden";
+        }
+    }
+})();
+
+this.engine.setLoader(defaultLoader);
+</pre>
+<p>
+    They can be as simple or complicated as you want, and once you set them using <code class="prettyprint lang-js">setLoader</code>    they will show up between levels.
+</p>
+<p>
+    The loaders are shown when you change the level, and are hidden once the <code class="prettyprint lang-js">#setup</code>    event of all objects has finished executing. This should be enough if you only write synchronous code, but if you use
+    callbacks, promises or any kind of async method you will be interested on letting the engine know when you actually finish
+    loading your level.
+</p>
+<p>
+    This example shows how to instruct the engine to hide the loader once a callback has been executed.
+</p>
+<pre class="prettyprint lang-js">
+...
+    {
+        name: "#setup", code: function (lock) {
+            lock.lock();
+            asyncMethod(function () {
+                lock.release();
+            });
+        }
+    }
+...
+</pre>
+<p>
+    The <code class="prettyprint lang-js">#setup</code> event always receives a lock object, that you can safely ignore in
+    synchronous code or, in this case, call its <code class="prettyprint lang-js">lock</code> method to make it wait until
+    you call <code class="prettyprint lang-js">release</code>. It will behave like a semaphore, so you can lock and release
+    as many times as you need and in any order, and once you have released it for each time you have locked it the engine will
+    know you have finished setting up your object, and will execute the <code class="prettyprint lang-js">#setup</code> event
+    of the next one. Once all the objects are finished, the loader will be hidden.
+</p>

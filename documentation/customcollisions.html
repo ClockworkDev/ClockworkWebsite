@@ -1,1 +1,37 @@
-//TODO
+<p>
+    By default, Clockwork is unable to detect collisions since it expects developers to declare which objects are tracked and
+    how to detect collisions between them. In order to do so, developer can write collision detectors such as the following:
+</p>
+<pre class="prettyprint lang-js">
+CLOCKWORKRT.collisions.register([
+    {
+        shape1: "player",
+        shape2: "enemyFire",
+        detector: function (p, ef) {
+            if (ef.x >= p.x && ef.y >= p.y && ef.x <= p.x + p.w && ef.y <= p.y + p.h) {
+                //Checking whether a point is inside a box
+                return true;
+            } else {
+                return false;
+            }
+        }
+    }
+]);
+</pre>
+<p>
+    By calling <code class="prettyprint lang-js">CLOCKWORKRT.collisions.register</code> with an array of collision detectors
+    as the argument, you can register them so they can be used in the <code class="prettyprint lang-js">collision</code> property of your components.
+</p>
+<p>
+    A collision detector must have the properties <code class="prettyprint lang-js">shape1</code> and <code class="prettyprint lang-js">shape2</code>,
+    which are the names of the shapes that will be tested agains each other to detect collisions. They can be different,
+    if you want to detect collisions between different types of shapes (for example, whether a point is inside a rectangle),
+    or the same, if you want to derect collisions between similar shapes (for example, whether two rectangles overlap). The
+    function found in the <code class="prettyprint lang-js">detector</code> property will receive an instance of both shapes and return true if they collide, or false ir they dont.
+</p>
+<p>
+    The shapes received will be the ones declared in the <code class="prettyprint lang-js">collision</code> property of the components, so shapes of a certain kind must have the properties expected by their collision detector function. The x, y and z properties of the collision shape are relative to the object when accessed from a component, but the collision function will receive absolute x, y and z coordinates.
+</p>
+<p>
+    Even if a game has many different kind of objects that share the same collision logic, developers are encouraged to declare many different collision detectors (for example, one for detecting player/enemyFire and another for enemy/playerFire, even if the logic is the same), because that way Clockwork will only check collisions of an object against the possible matches allowed by the registered collisions, therefore filtering the collisions before they are calculated and resulting in preformance improvements.
+</p>
