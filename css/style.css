@@ -6,7 +6,6 @@ body{
 }
 
 #splashPage a{
-    text-decoration: none;
     color:black;
 }
 
@@ -94,27 +93,23 @@ h4{
 }
 
 .buttonsContainer a{
-    color:white;
-    background:#666;
+    color:black;
     display:inline-block;
     margin-left: 10px;
-    padding:15px;
-    text-decoration: none;
-    font-size:30px;
+    padding:6px;
+    font-size:20px;
     vertical-align: middle;
     height:30px;
-    line-height: 30px;
+    line-height: 20px;
     overflow: hidden;
     margin-bottom:10px;
-    transition: color 0.2s ease-out;
+    transition: all 0.2s ease-out;
 }
 
-.buttonsContaine a:hover{
-    background: black;
+.buttonsContainer a:hover{
 }
 
-.buttonsContaine a:active{
-    background: black;
+.buttonsContainer a:active{
 }
 
 a > div{
@@ -124,7 +119,6 @@ a > div{
     vertical-align: middle;
     line-height: 40px;
     transition: all 0.5s ease-out;
-    color:white;    
 }
 
 @media only screen and (orientation:portrait) {
@@ -158,7 +152,6 @@ a > div{
         display:block;
     }
     a > div{
-        color:white;
     }
 }
 
@@ -288,12 +281,15 @@ a > div{
 }
 
 .fixedHeader h1{
-    font-size: 60px;  
+    font-size: 40px;  
     margin:0px;
 }
 
 .fixedHeader h3{
     margin-left:0px;
+    font-size: 30px; 
+    width:40%; 
+    overflow:hidden;
 }
 
 .fixedHeader h2{
@@ -313,13 +309,14 @@ a > div{
     display:block;
     position:absolute;
     right:10px;
-    top:10%;
+    top:0px;
     min-width:100px;
+    width: 40%;
 }
 
 
 .fixedHeader .linkText{
-    display:none;
+    /*display:none;*/
 }
 
 .fixedHeader .githubLogo{
