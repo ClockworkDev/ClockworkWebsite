@@ -20,3 +20,22 @@
         <li>There can be more fields, depending on the type of the colision object.</li>
     </ul>
 </p>
+<p>
+    When two objects collide the <code>#collide</code> event is triggered on them, and data relative to the collision is made available thorugh the arguments of the event. Since each object can have several colision objects, not only the game object that has collided with the current one is reported, but also the type and tag of the specific colision objects:
+</p>
+<pre class="prettyprint lang-js">
+        {
+            name: "#collide", code: function (data) {
+                //The object that has collided with the current one
+                event.object;
+                //The type of the collision of this object that has collided
+                event.shape1kind;
+                //The type of the collision of the other object that has collided
+                event.shape2kind
+                //The #tag property of the collision of this object that has collided
+                event.shape1tag
+                //The #tag property of the collision of the other object that has collided
+                event.shape2tag
+            }
+        }
+</pre>
