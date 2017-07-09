@@ -54,17 +54,20 @@
             <li><code>spawn </code> :This function spawns a new object in the current level and return it. For example:
                 <pre class="prettyprint lang-js">var newObject= this.engine.spawn("objectName", "component", {$x:0, $y:0, health:20});</pre>
             </li>
-            <li><code>destroy </code> : Given an object as its parameter, this function will delete it from the current
-                level.
+            <li><code>destroy </code> : Given an object as its parameter, this function will delete it from the current level.
             </li>
             <li><code>listObjects </code> : This function will return a list of all the objects in the current level.
             </li>
-            <li><code>loadLevel  </code> : This function will load the level specified by its parameter, which is a string.
-                For example, <code class="prettyprint lang-js">this.engine.loadLevelByID("tutorial");</code> will load the
-                level named "tutorial".
+            <li><code>loadLevel  </code> : This function will load the level specified by its parameter, which is a string. For
+                example, <code class="prettyprint lang-js">this.engine.loadLevel("tutorial");</code> will load the level
+                named "tutorial".
             </li>
-            <li><code>collisionQuery  </code> : This function will perform a collision query of the specified collider against all the objects in the level and return an array of the ones that collide.
-                For example, <pre class="prettyprint lang-js">this.engine.collisionQuery("box", { "x": 0, "y": 0, "w": 100, "h": 100 });</pre> will return the list of objects that collide with that box.
+            <li><code>collisionQuery  </code> : This function will perform a collision query of the specified collider against
+                all the objects in the level and return an array of the ones that collide. For example,
+                <pre class="prettyprint lang-js">this.engine.collisionQuery("box", { "x": 2000, "y": 500, "w": 100, "h": 100 });</pre> will return the list of objects that collide with that box. Since the collision query is not tied to an specific object, the x,y coordinates are absolute.
+            </li>
+            <li><code>setCollider  </code> : This function replaces the collision object with the specified `#tag` with the one specified (the coordinates are relative to the object). Here is an example:
+                <pre class="prettyprint lang-js">this.engine.setCollider("damageBox", { "x": 0, "y": 0, "w": 100, "h": 100 });</pre>
             </li>
         </ul>
     </li>
