@@ -69,11 +69,14 @@
             <li><code>setCollider  </code> : This function replaces the collision object with the specified `#tag` with the one specified (the coordinates are relative to the object). Here is an example:
                 <pre class="prettyprint lang-js">this.engine.setCollider("damageBox", { "x": 0, "y": 0, "w": 100, "h": 100 });</pre>
             </li>
+            <li><code>debug.log  </code> : This function prints the specified string to the log while the game is being debugged (using the <a href="#" onclick="loadDocumentationPage(this.dataset.target);return false;" data-target="vsce">VS Code Extension</a>):
+                <pre class="prettyprint lang-js">this.engine.debug.log("Current health:"+ this.var.health);</pre>
+            </li>
         </ul>
     </li>
 </ul>
 <p>
     The <code>engine</code> object exposes more methods, but you should not need them unless you have very specific needs
-    since they take care of the functionality that is already handled by the Clockwork Runtime. You can find them <a onclick="loadDocumentationPage(this.dataset.target);return false;"
+    since they take care of the functionality that is already handled by the Clockwork Runtime. You can find them <a href="#" onclick="loadDocumentationPage(this.dataset.target);return false;"
         data-target="advancedComponentAPI">here</a>.
 </p>
