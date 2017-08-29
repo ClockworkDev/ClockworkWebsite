@@ -5,73 +5,84 @@
     and functions exposed via <code>this</code>, which always refers to the object receiving the event. <code>this</code>    has the following properties:
 </p>
 <ul>
-    <li><code>do</code>: This allows you to send an event to the current object. For example:
+    <li><code><div class="ommitedCode">this.</div>do.&lt;eventName&gt;(&lt;eventArgs&gt;)</code>: These methods of the <code>do</code> object send an event to the current object. For example:
         <pre class="prettyprint lang-js">this.do.collectCoin({value:100});</pre> Will execute the <code>collectCoin</code> event in the current object, receiving <code>{value:100}</code> as the
         parameter.
     </li>
-    <li><code>var</code>: This hold all the local variables of the current object, for example:
+    <li><code><div class="ommitedCode">this.</div>var.&lt;variableName&gt;</code>: The <code>var</code> object holds all the local variables of the current object, for example:
         <pre class="prettyprint lang-js">this.var.$x += this.var.vx;</pre> This code will read the speed in the x axis of the object and add it to the current x position. There are several
         variables which are already used by the engine and you can read and write:
         <ul>
-            <li><code>$x</code>: This is the position of the object in the x axis</li>
-            <li><code>$y</code>: This is the position of the object in the y axis</li>
-            <li><code>$z</code>: This is the position of the object in the z axis</li>
-            <li><code>$state</code>: The state in which the object will be rendered (e.g. running, idle, attacking)</li>
+            <li><code><div class="ommitedCode">this.var.</div>$x</code>: This is the position of the object in the x axis</li>
+            <li><code><div class="ommitedCode">this.var.</div>$y</code>: This is the position of the object in the y axis</li>
+            <li><code><div class="ommitedCode">this.var.</div>$z</code>: This is the position of the object in the z axis</li>
+            <li><code><div class="ommitedCode">this.var.</div>$state</code>: The state in which the object will be rendered (e.g. running, idle, attacking)</li>
         </ul>
+        <p>
         As you can see, these variables all start with $. This is because any variable starting with $ will be made accessible to
         the rendering library so it can be used when rendering the object. Variable names starting with # are reserved for
         internal engine use and thus you should not use them.
+        </p>
     </li>
-    <li><code>spriteholder</code>: This is a handler for the sprite used by the rendering library to render the object, it can
+    <li><code><div class="ommitedCode">this.</div>spriteholder</code>: This variable is a handler for the sprite used by the rendering library to render the object, it can
         be used to manually call the rendering library methods.
+
+        For example, this code would allow to manually change the spritesheet used to render a given object:
+        <pre class="prettyprint lang-js">this.engine.getRenderingLibrary().setSpritesheet(this.spriteholder, "someNewSpritesheet");</pre>       
     </li>
-    <li><code>engine</code>: This is a reference to the whole engine and has these properties:
+    <li><code><div class="ommitedCode">this.</div>setCollider(&lt;tagId&gt;,&lt;collider&gt;)</code> : This function replaces the collision object with the specified `#tag` with the one specified (the coordinates are relative to the object). Here is an example:
+        <pre class="prettyprint lang-js">this.engine.setCollider("damageBox", { "x": 0, "y": 0, "w": 100, "h": 100 });</pre>
+    </li>
+    <li><code><div class="ommitedCode">this.</div>engine</code>: This is a reference to the game engine and has these properties:
         <ul>
-            <li><code>do</code>: This works just like <code>this.do</code>, but will send the event to all the object in the
-                levels.
+            <li><code><div class="ommitedCode">this.engine.</div>do.&lt;eventName&gt;(&lt;eventArgs&gt;)</code>: This works just like <code>this.do</code>, but will send the event to all the object in the
+                level.
+                <pre class="prettyprint lang-js">this.engine.do.spellCasted({type:"blizzard", damage:30});</pre>
             </li>
-            <li><code>var</code>: This works just like <code>this.var</code>, but will store global variables that any object
+            <li><code><div class="ommitedCode">this.engine.</div>var.&lt;variableName&gt;</code>: This works just like <code>this.var</code>, but will store global variables that any object
                 can access, and their value will be preserved across levels. There are several variables which are already
                 used by the engine and you can read and write:
                 <ul>
-                    <li><code>$cameraX</code>: This is the position of the camera in the x axis</li>
-                    <li><code>$cameraY</code>: This is the position of the camera in the y axis</li>
-                    <li><code>$cameraZ</code>: This is the position of the camera in the z axis</li>
-                    <li><code>#currentLevel</code>: This is the name of the current level</li>
-                    <li><code>#DOM</code>: A reference to the canvas element used to render the game</li>
+                    <li><code><div class="ommitedCode">this.engine.var.</div>$cameraX</code>: This is the position of the camera in the x axis.</li>
+                    <li><code><div class="ommitedCode">this.engine.var.</div>$cameraY</code>: This is the position of the camera in the y axis.</li>
+                    <li><code><div class="ommitedCode">this.engine.var.</div>$cameraZ</code>: This is the position of the camera in the z axis.</li>
+                    <li><code><div class="ommitedCode">this.engine.var['</div>#currentLevel<div class="ommitedCode">']</div></code>: This is the name of the current level, it is read-only.</li>
+                    <li><code><div class="ommitedCode">this.engine.var['</div>#DOM<div class="ommitedCode">']</div></code>: A reference to the canvas element used to render the game, it is read-only.</li>
                 </ul>
+                <p>
+                        For example, this code will move the camera 5 px to the right:
+                        <pre class="prettyprint lang-js">this.engine.var.$cameraX += 5;</pre>
+                </p>
             </li>
-            <li><code>setLoader</code>: This allows you to set a loading screen that will be shown between levels. You can find
-                more information in the <a onclick="loadDocumentationPage(this.dataset.target);return false;" data-target="loaders">loaders</a>                section.
+            <li><code><div class="ommitedCode">this.engine.</div>setLoader(&lt;loaderObject&gt;)</code>: This allows you to set a loading screen that will be shown between levels. You can find
+                more information in the <a onclick="loadDocumentationPage(this.dataset.target);return false;" data-target="loaders" href="#">loaders</a>                section.
             </li>
-            <li><code>getFPS</code>: This function returns the frames per second at which the engine is running.
+            <li><code><div class="ommitedCode">this.engine.</div>getFPS()</code>: This function returns the frames per second at which the engine is running,as specified in the manifest.
             </li>
-            <li><code>find</code> : This function searches for an object in the current level whose name matches the string provided,
+            <li><code><div class="ommitedCode">this.engine.</div>find(&lt;objectName&gt;)</code>: This function searches for an object in the current level whose name matches the string provided,
                 and returns it. For example:
                 <pre class="prettyprint lang-js">var mainCharacter =  this.engine.find("Papyrus");</pre>
             </li>
-            <li><code>getRenderingLibrary</code> : This function returns a reference to the rendering library so you can manually
-                call its methods.
+            <li><code><div class="ommitedCode">this.engine.</div>getRenderingLibrary()</code> : This function returns a reference to the rendering library so you can manually
+                call its methods, which follow <a href="https://github.com/ClockworkDev/RenderingLibraryInterface/blob/master/interface.js">this interface</a>.
             </li>
-            <li><code>spawn </code> :This function spawns a new object in the current level and return it. For example:
+            <li><code><div class="ommitedCode">this.engine.</div>spawn(&lt;objectName&gt;, &lt;objectComponent&gt;, &lt;objectVariables&gt;)</code>: This function spawns a new object in the current level and return it. For example:
                 <pre class="prettyprint lang-js">var newObject= this.engine.spawn("objectName", "component", {$x:0, $y:0, health:20});</pre>
             </li>
-            <li><code>destroy </code> : Given an object as its parameter, this function will delete it from the current level.
+            <li><code><div class="ommitedCode">this.engine.</div>destroy(&lt;object&gt;)</code>: Given an object as its parameter, this function will delete it from the current level. For example, this code allows an object to destroy itself:
+                <pre class="prettyprint lang-js">this.engine.destroy(this);</pre>
             </li>
-            <li><code>listObjects </code> : This function will return a list of all the objects in the current level.
+            <li><code><div class="ommitedCode">this.engine.</div>listObjects()</code>: This function will return an array containing all the objects in the current level.
             </li>
-            <li><code>loadLevel  </code> : This function will load the level specified by its parameter, which is a string. For
-                example, <code class="prettyprint lang-js">this.engine.loadLevel("tutorial");</code> will load the level
+            <li><code><div class="ommitedCode">this.engine.</div>loadLevel(&lt;levelName&gt;)</code>  This function will load the level specified. For
+                example, <pre class="prettyprint lang-js">this.engine.loadLevel("tutorial");</pre> will load the level
                 named "tutorial".
             </li>
-            <li><code>collisionQuery  </code> : This function will perform a collision query of the specified collider against
+            <li><code><div class="ommitedCode">this.engine.</div>collisionQuery(&lt;collisionType&gt;, &lt;collider&gt;)</code>: This function will perform a collision query of the specified collider against
                 all the objects in the level and return an array of the ones that collide. For example,
                 <pre class="prettyprint lang-js">this.engine.collisionQuery("box", { "x": 2000, "y": 500, "w": 100, "h": 100 });</pre> will return the list of objects that collide with that box. Since the collision query is not tied to an specific object, the x,y coordinates are absolute.
             </li>
-            <li><code>setCollider  </code> : This function replaces the collision object with the specified `#tag` with the one specified (the coordinates are relative to the object). Here is an example:
-                <pre class="prettyprint lang-js">this.engine.setCollider("damageBox", { "x": 0, "y": 0, "w": 100, "h": 100 });</pre>
-            </li>
-            <li><code>debug.log  </code> : This function prints the specified string to the log while the game is being debugged (using the <a href="#" onclick="loadDocumentationPage(this.dataset.target);return false;" data-target="vsce">VS Code Extension</a>):
+            <li><code><div class="ommitedCode">this.engine.</div>debug.log(&lt;someString&gt;)</code>: This function prints the specified string to the log while the game is being debugged (using the <a href="#" onclick="loadDocumentationPage(this.dataset.target);return false;" data-target="vsce">VS Code Extension</a>):
                 <pre class="prettyprint lang-js">this.engine.debug.log("Current health:"+ this.var.health);</pre>
             </li>
         </ul>

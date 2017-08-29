@@ -431,3 +431,32 @@ a > div{
 #documentationContent h2{
     margin-left:0px;
 }
+
+code{
+    background: #EEE;
+    padding: 2px 10px;
+    border: 1px solid #999;
+}
+
+li code:first-child{
+    font-weight: bold;
+    font-size: large;
+    background: none;
+    padding: 0px;
+    border:none;
+}
+
+pre{
+    background:#FFF;
+    padding:10px !important;
+}
+
+
+#documentationPages li{
+    margin-bottom:5px;
+}
+
+.ommitedCode{
+    display: inline;
+    color:#888;
+}

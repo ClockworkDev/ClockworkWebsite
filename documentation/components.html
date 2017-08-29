@@ -11,8 +11,7 @@
 </p>
 <p>
     You dont have to cram all the functionality of an specific type of object in a single component, actually you are encouraged
-    to write 'minimal' components that encapsulate a specific behavior, and then use combine those components in your game
-    objects and then use both the composition and inheritance pattern to create new components.
+    to write small components that encapsulate a specific behavior, and then use both the composition and inheritance pattern to create new components.
 </p>
 <p>
     Let's have a look at the component syntax:
@@ -47,10 +46,10 @@
     As you can see, those are the properties that define a component:
     <ul>
         <li><code>name</code>: Specifies the preset name, it must be unique.</li>
-        <li><code>sprite</code>: Specifies the spritesheet used to render the object.</li>
+        <li><code>sprite</code>: Specifies the spritesheet used to render the object. Read the <a onclick="loadDocumentationPage(this.dataset.target);return false;" data-target="spritesheets" href="#">spritesheets</a> page to learn how to declare them.</li>
         <li><code>inherits</code>: A component can inherit from either a single component or a list of them.</li>
         <li><code>events </code>: The event handlers will contain all the logic of your game, they are functions that will be executed when some event happens.</li>
-        <li><code>collision </code>:  Specifies the shapes that will act as hitboxes.</li>
+        <li><code>collision </code>:  Specifies the shapes that will act as hitboxes.  Read the <a onclick="loadDocumentationPage(this.dataset.target);return false;" data-target="collisions" href="#">collisions</a> page to learn how to declare them.</li>
         <li><code>vars </code>: Any variable that the object may need. You can also set them in the code, but if you define them here you can easily inherit and modify the values.</li>
     </ul>
 </p>
