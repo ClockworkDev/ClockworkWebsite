@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Clockwork Blog</title>
+    <description>The official blog for the Clockwork game development platform.  Learn how to make awesome modular multiplatform games using JavaScript.
+</description>
+    <link>http://clockwork.js.org/blog/blog/</link>
+    <atom:link href="http://clockwork.js.org/blog/blog/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 05 Sep 2017 15:28:20 +0200</pubDate>
+    <lastBuildDate>Tue, 05 Sep 2017 15:28:20 +0200</lastBuildDate>
+    <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>Clockwork: an open platform for HTML5 games</title>
+        <description>&lt;p&gt;I’m pleased to announce the official release of &lt;a href=&quot;http://clockwork.js.org/&quot;&gt;Clockwork, an open platform for developing HTML5 games based on modular components&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;why-clockwork&quot;&gt;Why Clockwork&lt;/h1&gt;
+
+&lt;p&gt;Before getting into details about it, let’s address the elephant in the room: &lt;em&gt;Why do we need yet another game engine&lt;/em&gt;? The best way of addressing that question is listing the objectives of the project:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Develop a platform that is not only open source but designed from the ground up to be more open (as opossed to more traditional ‘monolithical’ game engines), so you choose / build your own rendering library, physics, native API wrappers…&lt;/li&gt;
+  &lt;li&gt;Provide an end-to-end developer-friendly experience, with tools that ease common tasks such as deploying, debugging, managing dependencies, publishing… , instead of just providing a .js library and asking the developer to bring their own build tools.&lt;/li&gt;
+  &lt;li&gt;Expose an elegant, small (and easy to learn!) API, designed around message passing, that makes writing game logic a breeze, and also provide an easy way to use composition and inheritance.&lt;/li&gt;
+  &lt;li&gt;Rather than trying to minimize the amount of code that has to be writen by the developer, its top priority should be to maximize the flexibility of the engine.&lt;/li&gt;
+  &lt;li&gt;Buildind the platform exclusively on top of web technologies so it can be easily ported to any platform and adapted to any workflow.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;how-to-get-started&quot;&gt;How to get started&lt;/h1&gt;
+
+&lt;p&gt;Want to give Clockwork a test ride? Great! First you will need to &lt;a href=&quot;http://clockwork.js.org/getstarted.html&quot;&gt;get the tools&lt;/a&gt; and then you can &lt;a href=&quot;/blog/tutorial/shootemup/2017/06/10/shootemup1.html&quot;&gt;follow a tutorial&lt;/a&gt; to get started!&lt;/p&gt;
+
+&lt;h1 id=&quot;future-work&quot;&gt;Future work&lt;/h1&gt;
+
+&lt;p&gt;These are the work items being considered for future releases:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/ClockworkDev/ClockworkVSCodePlugin/issues/6&quot;&gt;Integrate the package manager commands into the VS extension&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/ClockworkDev/OfficialClockworkPackages/issues/2&quot;&gt;Write a Babylon.js rendering library adapter&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/ClockworkDev/ClockworkWebBridge/issues/2&quot;&gt;Export games as PWA (add manifest, service worker)&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/ClockworkDev/ClockworkCore/issues/4&quot;&gt;Add solid debugging support&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/ClockworkDev/ClockworkPackageManager/issues/1&quot;&gt;Create a web interface for browsing the package manager&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/ClockworkDev/ClockworkCore/issues/3&quot;&gt;Add performance tools&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;how-to-contribute&quot;&gt;How to contribute&lt;/h1&gt;
+
+&lt;h3 id=&quot;publish-your-own-packages&quot;&gt;Publish your own packages&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;/blog/tutorial/packages/2017/09/01/packageManager.html&quot;&gt;If you write a package, you can publish it to the package repository!&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;contribute-to-the-platform&quot;&gt;Contribute to the platform&lt;/h3&gt;
+
+&lt;p&gt;You are more than welcome to head to &lt;a href=&quot;https://github.com/ClockworkDev&quot;&gt;our Github page&lt;/a&gt; and start forking repos, opening issues and sending PRs.&lt;/p&gt;
+
+&lt;p&gt;In case you would like to get involved but don’t know where to start,here are some work items were help would be appreciated:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/ClockworkDev/ClockworkRuntime/issues/1&quot;&gt;Port the Clockwork Runtime to other platforms (macOS, linux)&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/ClockworkDev/ClockworkWebBridge/issues/1&quot;&gt;Build an Apache Cordova bridge&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;the-future&quot;&gt;The future&lt;/h1&gt;
+
+&lt;p&gt;Clockwork was originally born as a side project, with the only goal to provide a lightweight and versatile way to ease up the main pain points I found while doing HTML5 game development. It succeeded at that, and after seeing that it was also helpful to other people I decided to realease it. Where does it go from here?&lt;/p&gt;
+
+&lt;p&gt;My intention is to keep working on it, mainly improving the tooling and adding support for more rendering libraries (aka what you just read on the Future work section), and use it to keep making my own games.&lt;/p&gt;
+
+&lt;p&gt;However, I also hope that some of the people reading this post (that’s you!) decide to give it a try, some of them provide valuable feedback, and some of them even contribute to the project with their own ideas and code, so we can together keep empowering HTML5 gamedevs to make awesome projects!&lt;/p&gt;
+</description>
+        <pubDate>Fri, 01 Sep 2017 18:00:00 +0200</pubDate>
+        <link>http://clockwork.js.org/blog/blog/news/2017/09/01/clockworkLaunch.html</link>
+        <guid isPermaLink="true">http://clockwork.js.org/blog/blog/news/2017/09/01/clockworkLaunch.html</guid>
+        
+        
+        <category>news</category>
+        
+      </item>
+    
+      <item>
+        <title>Using the package repository</title>
+        <description>&lt;p&gt;Many games share some common functionality that you can (and should!) reuse across projects, and this is where the Clocwork package repository comes in handy: you can easily add components, collision detectors and rendering libraries as dependencies to easily incorporate that existing functionality into your game, and you can also upload youw own packages if you want to share your work with the community!&lt;/p&gt;
+
+&lt;p&gt;Here are some instructions:&lt;/p&gt;
+
+&lt;h1 id=&quot;adding-a-dependency&quot;&gt;Adding a dependency&lt;/h1&gt;
+
+&lt;p&gt;You can run&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;clockwork list&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;on a console to see the full list of published packages. If you want to see all the published versions of the package, you can run &lt;code class=&quot;highlighter-rouge&quot;&gt;clockwork list &amp;lt;packageName&amp;gt;&lt;/code&gt;. Once you have chosen a package, you can run&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;clockwork add &amp;lt;packageName&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;in your project folder in order to add the dependency to the manifest. That command will add the last version of the package, but you can &lt;code class=&quot;highlighter-rouge&quot;&gt;clockwork add &amp;lt;packageName&amp;gt; &amp;lt;packageVersion&amp;gt;&lt;/code&gt; to choose one manually.&lt;/p&gt;
+
+&lt;p&gt;Now you are technically done, and can use the components, collision detectors and rendering libraries as if you had added their source files into your project, but there is one last thing you will find helpful.&lt;/p&gt;
+
+&lt;p&gt;Even if you will find &lt;a href=&quot;/blog/packages&quot;&gt;posts about the most popular packages in this blog&lt;/a&gt;, you will want quick access to the documentation for a package. In order to do so, when working in your project with Visual Studio code, you can run the &lt;code class=&quot;highlighter-rouge&quot;&gt;Browse Clockwork package documentation&lt;/code&gt; command, input the name of the package, and a tab will open with the package documentation.&lt;/p&gt;
+
+&lt;h1 id=&quot;publishing-a-package&quot;&gt;Publishing a package&lt;/h1&gt;
+
+&lt;p&gt;In order to publish a package first you will need an account in the repository. You can run&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;clockwork register&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;in order to create a developer account.&lt;/p&gt;
+
+&lt;p&gt;Once you have it, you can run&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;clockwork publish&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;and you will be prompted for the .js file location, the package name and package version, and your credentials. You can reupload different versions of the package later (the use of semantic versioning is encourage), or even overwrite an already published version if you made a mistake. (Once you publish a package from an account, it will be associated as the owner and only that account will be allowed to upload new versions of that package.)&lt;/p&gt;
+
+&lt;p&gt;If you think that your package might be useful to other people, you are welcome to submit it to the &lt;a href=&quot;https://github.com/ClockworkDev/OfficialClockworkPackages&quot;&gt;official packages repository&lt;/a&gt;. While it is not mandatory, it will allow other people to collaborate and you will be invited to write a post about it in this blog!&lt;/p&gt;
+
+&lt;p&gt;Once last thing: you can add more attributes to the components so that automatic documentation is generated to your package! The feature is not yet properly documented but we encourage you to take a look at the examples in the &lt;a href=&quot;https://github.com/ClockworkDev/OfficialClockworkPackages&quot;&gt;previously mentioned repository&lt;/a&gt;, and ask us if you need help!&lt;/p&gt;
+</description>
+        <pubDate>Fri, 01 Sep 2017 18:00:00 +0200</pubDate>
+        <link>http://clockwork.js.org/blog/blog/tutorial/packages/2017/09/01/packageManager.html</link>
+        <guid isPermaLink="true">http://clockwork.js.org/blog/blog/tutorial/packages/2017/09/01/packageManager.html</guid>
+        
+        
+        <category>tutorial</category>
+        
+        <category>packages</category>
+        
+      </item>
+    
+      <item>
+        <title>Deploying games to a Raspberry Pi / IoT device</title>
+        <description>&lt;p&gt;If you are interested in building your own inexpensive gaming consoles, or running your game as a distributed system across many devices, we’ve some great news for you: Clockwork allows you to run your game on IoT devices, such as the Raspberry Pi, Intel Joule or Dragonboard 410!&lt;/p&gt;
+
+&lt;p&gt;By deploying Windows 10 IoT core on the device, you can run the runtime on it to deploy and debug your games (while having full access to the native APIs!), and finally use the UWP bridge to export it as an app ready to be deployed on any device.&lt;/p&gt;
+
+&lt;p&gt;If you are interested in doing so, first you should head to the &lt;a href=&quot;https://developer.microsoft.com/en-us/windows/iot/getstarted&quot;&gt;Windows 10 IoT webpage&lt;/a&gt; and follow the steps to flash your device.&lt;/p&gt;
+
+&lt;p&gt;In order to deploy games to your device you will first need to install Clockwork Runtime, the same app that allows you to develop games on your PC. However, since IoT devices don’t have access to the store, you’ll have to deploy it manually. You should download the source code from &lt;a href=&quot;https://github.com/ClockworkDev/ClockworkRuntime&quot;&gt;this srepo&lt;/a&gt;, open it with Visual Studio, and select a remote machine as the deploy target, as depicted here:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/pictures/vsRemoteMachine.png&quot; alt=&quot;Selecting a remote machine as the deploy target&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You will be prompted for the IP of the IoT device, which will be shown in the screen attached to it (you should definetely attach a screen if you are developing a graphical game!) or can also be found in the IoT dashboard app.&lt;/p&gt;
+
+&lt;p&gt;Now, you can press &lt;code class=&quot;highlighter-rouge&quot;&gt;F5&lt;/code&gt; to deploy the runtime to the IoT device and launch it. You can then use the IoT dashboard app to select it as your startup app so every time the device powers on it will be launched.&lt;/p&gt;
+
+&lt;p&gt;Once you have the runtime set up in your device, make sure it is connected to the same local network as your development PC. Then, launch the app in the console and you will be greeted by a screen similar to this one:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/pictures/emptyRuntime.png&quot; alt=&quot;The initial Clockwork Runtime screen&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The IP of the device, which will be useful later on, is shown at the bottom of the screen.&lt;/p&gt;
+
+&lt;p&gt;Now, open the game project with Visual Studio Code, press &lt;code class=&quot;highlighter-rouge&quot;&gt;F1&lt;/code&gt; and execute the &lt;code class=&quot;highlighter-rouge&quot;&gt;Deploy Clockwork project to a remote machine&lt;/code&gt; command. You will see that the device starts installing the game package, excatly the as if you were deploying it on your PC!&lt;/p&gt;
+
+&lt;p&gt;Unless you have a mouse attached to your device you will need to launch your game in debug mode. In the game project, open &lt;code class=&quot;highlighter-rouge&quot;&gt;.vscode/launch.json&lt;/code&gt; (the file used by Visual Studio Code to know how to launch the project), and you will see something like this:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// Use IntelliSense to learn about possible Node.js debug attributes.
+&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// Hover to view descriptions of existing attributes.
+&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+&lt;/span&gt;
+    &lt;span class=&quot;s2&quot;&gt;&quot;version&quot;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;0.2.0&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;s2&quot;&gt;&quot;configurations&quot;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;s2&quot;&gt;&quot;type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;clockwork&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;s2&quot;&gt;&quot;request&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;launch&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;s2&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Debug game&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;s2&quot;&gt;&quot;program&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;${workspaceRoot}/manifest.json&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;s2&quot;&gt;&quot;levelEditorEnabled&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;When you create a new project, there is only one launch configuration defined, that allows you to debug games locally. We need to add another one that will point to our device, using the IP that is shown in Clockwork Runtime:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// Use IntelliSense to learn about possible Node.js debug attributes.
+&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// Hover to view descriptions of existing attributes.
+&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+&lt;/span&gt;
+    &lt;span class=&quot;s2&quot;&gt;&quot;version&quot;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;0.2.0&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;s2&quot;&gt;&quot;configurations&quot;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;s2&quot;&gt;&quot;type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;clockwork&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;s2&quot;&gt;&quot;request&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;launch&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;s2&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Debug game&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;s2&quot;&gt;&quot;program&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;${workspaceRoot}/manifest.json&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;s2&quot;&gt;&quot;levelEditorEnabled&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;s2&quot;&gt;&quot;type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;clockwork&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;s2&quot;&gt;&quot;request&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;launch&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;s2&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Debug game on remote device&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//You can choose any name you want
+&lt;/span&gt;
+            &lt;span class=&quot;s2&quot;&gt;&quot;program&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;${workspaceRoot}/manifest.json&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;s2&quot;&gt;&quot;remoteMachine&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;192.168.1.36&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//Here you need to place the IP address of the device
+&lt;/span&gt;
+            &lt;span class=&quot;s2&quot;&gt;&quot;levelEditorEnabled&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Finally you just need to open the Debug panel and select the new debug configuration:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/pictures/chooseDebug.png&quot; alt=&quot;Choosing a debug configuration&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After pressing &lt;code class=&quot;highlighter-rouge&quot;&gt;F5&lt;/code&gt; the game will launch on the device, and you will be able to see the log on real time on your PC!&lt;/p&gt;
+
+&lt;p&gt;Have fun developing your IoT game, here are some extra tips:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;You can use &lt;a href=&quot;https://docs.microsoft.com/en-us/uwp/api/windows.devices.gpio&quot;&gt;some UWP APIs to access the GPIO pins&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;When you finish your project, you can use the &lt;a href=&quot;/blog/bridges/tutorial/2017/07/03/uwpBridge.html&quot;&gt;UWP bridge&lt;/a&gt; to generate app packages!&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 30 Aug 2017 18:01:00 +0200</pubDate>
+        <link>http://clockwork.js.org/blog/blog/tutorial/iot/raspberry-pi/2017/08/30/iot.html</link>
+        <guid isPermaLink="true">http://clockwork.js.org/blog/blog/tutorial/iot/raspberry-pi/2017/08/30/iot.html</guid>
+        
+        
+        <category>tutorial</category>
+        
+        <category>iot</category>
+        
+        <category>raspberry-pi</category>
+        
+      </item>
+    
+      <item>
+        <title>Deploying games to an Xbox One</title>
+        <description>&lt;p&gt;Building games for game consoles and deploying / debugigng them has always been complicated, but Clockwork allows to build games for Xbox One very easily.&lt;/p&gt;
+
+&lt;p&gt;In order to deploy games to your Xbox you will first need to install &lt;a href=&quot;https://www.microsoft.com/en-us/store/p/clockwork-runtime/9mt9ntllrqsr&quot;&gt;Clockwork Runtime&lt;/a&gt;, by following that link on your Xbox or searching for  the app on the Store.&lt;/p&gt;
+
+&lt;p&gt;Once you have the runtime set up in your Xbox, make sure both your development PC and the console are connected to the same local network. Then, launch the app in the console and you will be greeted by a screen similar to this one:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/pictures/emptyRuntime.png&quot; alt=&quot;The initial Clockwork Runtime screen&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The IP of the console, which will be useful later on, is shown at the bottom of the screen.&lt;/p&gt;
+
+&lt;p&gt;Now, open the game project with Visual Studio Code, press &lt;code class=&quot;highlighter-rouge&quot;&gt;F1&lt;/code&gt; and execute the &lt;code class=&quot;highlighter-rouge&quot;&gt;Deploy Clockwork project to a remote machine&lt;/code&gt; command. You will see that the console starts installing the game package, excatly the as if you were deploying it on your PC!&lt;/p&gt;
+
+&lt;p&gt;Since the Runtime menu does not support gamepad input yet, unless you have a mouse attached to your console you will need to launch your game in debug mode. In the game project, open &lt;code class=&quot;highlighter-rouge&quot;&gt;.vscode/launch.json&lt;/code&gt; (the file used by Visual Studio Code to know how to launch the project), and you will see something like this:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// Use IntelliSense to learn about possible Node.js debug attributes.
+&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// Hover to view descriptions of existing attributes.
+&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+&lt;/span&gt;
+    &lt;span class=&quot;s2&quot;&gt;&quot;version&quot;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;0.2.0&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;s2&quot;&gt;&quot;configurations&quot;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;s2&quot;&gt;&quot;type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;clockwork&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;s2&quot;&gt;&quot;request&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;launch&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;s2&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Debug game&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;s2&quot;&gt;&quot;program&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;${workspaceRoot}/manifest.json&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;s2&quot;&gt;&quot;levelEditorEnabled&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;When you create a new project, there is only one launch configuration defined, that allows you to debug games locally. We need to add another one that will point to our console, using the IP that is shown in Clockwork Runtime:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// Use IntelliSense to learn about possible Node.js debug attributes.
+&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// Hover to view descriptions of existing attributes.
+&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+&lt;/span&gt;
+    &lt;span class=&quot;s2&quot;&gt;&quot;version&quot;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;0.2.0&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;s2&quot;&gt;&quot;configurations&quot;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;s2&quot;&gt;&quot;type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;clockwork&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;s2&quot;&gt;&quot;request&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;launch&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;s2&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Debug game&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;s2&quot;&gt;&quot;program&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;${workspaceRoot}/manifest.json&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;s2&quot;&gt;&quot;levelEditorEnabled&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;s2&quot;&gt;&quot;type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;clockwork&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;s2&quot;&gt;&quot;request&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;launch&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;s2&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Debug game on remote device&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//You can choose any name you want
+&lt;/span&gt;
+            &lt;span class=&quot;s2&quot;&gt;&quot;program&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;${workspaceRoot}/manifest.json&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;s2&quot;&gt;&quot;remoteMachine&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;192.168.1.36&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//Here you need to place the IP address of the console
+&lt;/span&gt;
+            &lt;span class=&quot;s2&quot;&gt;&quot;levelEditorEnabled&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Finally you just need to open the Debug panel and select the new debug configuration:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/pictures/chooseDebug.png&quot; alt=&quot;Choosing a debug configuration&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After pressing &lt;code class=&quot;highlighter-rouge&quot;&gt;F5&lt;/code&gt; the game will launch on the console, and you will be able to see the log on real time on your PC!&lt;/p&gt;
+
+&lt;p&gt;Have fun developing your Xbox game, here are some extra tips:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;You can use the &lt;a href=&quot;/blog/gamepad/packages/2017/06/10/gamepad.html&quot;&gt;gamepad package&lt;/a&gt; to easily integrate the Xbox controller&lt;/li&gt;
+  &lt;li&gt;When you finish your project, you can use the &lt;a href=&quot;/blog/bridges/tutorial/2017/07/03/uwpBridge.html&quot;&gt;UWP bridge&lt;/a&gt; to upload it to the Store!&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 30 Aug 2017 18:00:00 +0200</pubDate>
+        <link>http://clockwork.js.org/blog/blog/tutorial/xbox/2017/08/30/xbox.html</link>
+        <guid isPermaLink="true">http://clockwork.js.org/blog/blog/tutorial/xbox/2017/08/30/xbox.html</guid>
+        
+        
+        <category>tutorial</category>
+        
+        <category>xbox</category>
+        
+      </item>
+    
+      <item>
+        <title>UWP Bridge</title>
+        <description>&lt;p&gt;To allow developers to publish their games in different platforms, Clockwork offers a set of bridges, programs that will export Clockwork games (.cw) to native apps. One of these is the Universal Windows Platform Bridge, which generates Visual Studio solutions from your games so they can be uploaded to the Windows Store and played on any device running Windows 10.&lt;/p&gt;
+
+&lt;h3 id=&quot;generating-the-solution&quot;&gt;Generating the solution&lt;/h3&gt;
+&lt;p&gt;In order to use this bridge, open your game’s folder in Visual Studio Code and press F1 and write &lt;code class=&quot;highlighter-rouge&quot;&gt;Export game using the UWP Bridge&lt;/code&gt;. Clockwork will then create a folder named &lt;code class=&quot;highlighter-rouge&quot;&gt;uwp&lt;/code&gt; for you. Inside it, you will find the Visual Studio solution. Now you can open it in Visual Studio by double-clicking the .sln or opening it from VS.&lt;/p&gt;
+
+&lt;p&gt;As any other VS solution, you can now run it in your computer or in another device (like a phone running Windows, for example)and you can also upload it to the Windows Store.&lt;/p&gt;
+
+&lt;h3 id=&quot;windows-store&quot;&gt;Windows Store&lt;/h3&gt;
+&lt;p&gt;To upload applications to the Windows Store you will first need a &lt;a href=&quot;https://developer.microsoft.com/en-us/store/register&quot;&gt;developer account&lt;/a&gt;, which requires a one-time registration fee for individuals and companies, but is free for students, and doesn’t need nenewal.&lt;/p&gt;
+
+&lt;p&gt;When you have it, open your VS solution and go to Project &amp;gt; Store &amp;gt; Create App Packages… It will ask you if you want to create packages to upload to the Windows Store, continue. Now it will check your developer account and show you all your created apps from &lt;a href=&quot;https://developer.microsoft.com/en-us/dashboard/windows/overview&quot;&gt;your developer dashboard&lt;/a&gt; so that you can choose for which app this package will be, or you can simply create a new one from here by reserving an app game.&lt;/p&gt;
+
+&lt;p&gt;You should get to this screen:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/pictures/store1.PNG&quot; alt=&quot;Store packages generation options&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here you have the output location where you want the packages to be generated the version of the application (which increments automatically), and the packages you want to create. If you don’t know what to touch here, just leave the defaults, they are just what you need. :)&lt;/p&gt;
+
+&lt;p&gt;When the package is created, Visual Studio will prompt a window from which you can access the folder with the packages. It will also ask you where you want to run the validation. Usually, you’ll want to do it in the local machine but you can also use a remote machine if you need to.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/pictures/store2.PNG&quot; alt=&quot;Packages generated&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Launch the Windows App Certification Kit and leave the comuter alone. This validation will start opening your application and closing it a couple of times to test several things. Once it’s done, a window will appear with the result. If your app didn’t pass the certification, it will tell you why so you can fix it.&lt;/p&gt;
+
+&lt;p&gt;Now go to &lt;a href=&quot;https://developer.microsoft.com/en-us/dashboard/windows/overview&quot;&gt;your developer dashboard&lt;/a&gt; and choose your application.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/pictures/store3.PNG&quot; alt=&quot;Application in dashboard&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Hit the &lt;code class=&quot;highlighter-rouge&quot;&gt;Start your submission&lt;/code&gt; button and you’ll arrive at a screen where you can prepare your game for the store. Everything is pretty straightforward from here.&lt;/p&gt;
+
+&lt;p&gt;When you arrive to the &lt;code class=&quot;highlighter-rouge&quot;&gt;Packages&lt;/code&gt; section, you’ll see this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/pictures/store4.PNG&quot; alt=&quot;Packages section in store submission&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here is where you need to place what you generated in Visual Studio; find your &lt;code class=&quot;highlighter-rouge&quot;&gt;appxupload&lt;/code&gt; file and put it in there.&lt;/p&gt;
+
+&lt;p&gt;When you are done with everything, you can submit it to the store and it will start a process of certification. It can take from a few hours to a couple of days but you’ll receive an email once it’s done and you’ll get the url of your game in the store. It will also be found when searching if you allowed it. And that is all! You’ll soon be able to brag to your friends about having an app in the Windows Store. 😎&lt;/p&gt;
+</description>
+        <pubDate>Mon, 03 Jul 2017 18:00:00 +0200</pubDate>
+        <link>http://clockwork.js.org/blog/blog/bridges/tutorial/2017/07/03/uwpBridge.html</link>
+        <guid isPermaLink="true">http://clockwork.js.org/blog/blog/bridges/tutorial/2017/07/03/uwpBridge.html</guid>
+        
+        
+        <category>bridges</category>
+        
+        <category>tutorial</category>
+        
+      </item>
+    
+      <item>
+        <title>Web Bridge</title>
+        <description>&lt;p&gt;To allow developers to publish their games in different platforms, Clockwork offers a set of bridges, programs that will export Clockwork games (.cw) to native apps. One of these is the Web Bridge, which generates websites that host the games so they can be played in any browser.&lt;/p&gt;
+
+&lt;h3 id=&quot;generating-the-web&quot;&gt;Generating the web&lt;/h3&gt;
+&lt;p&gt;In order to use this bridge, open your game’s folder in Visual Studio Code and press F1 and write &lt;code class=&quot;highlighter-rouge&quot;&gt;Export game using the Web Bridge&lt;/code&gt;. Clockwork will then create a folder named &lt;code class=&quot;highlighter-rouge&quot;&gt;web&lt;/code&gt; for you. Inside it, you will find everything needed to host your game in a website.
+If you want to give it a try locally you might want to create a fast local server. You can do this with Node.js very easily. Install &lt;a href=&quot;https://nodejs.org/en/&quot;&gt;Node.js&lt;/a&gt; and then use npm to install &lt;a href=&quot;https://www.npmjs.com/package/http-server&quot;&gt;http-server&lt;/a&gt;. Open cmd in the folder where you want to test it (the web folder here, where the index is) and run &lt;code class=&quot;highlighter-rouge&quot;&gt;http-server&lt;/code&gt;. Now open a browser and go to &lt;code class=&quot;highlighter-rouge&quot;&gt;localhost:8080&lt;/code&gt; and your game will be there.&lt;/p&gt;
+
+&lt;h3 id=&quot;hosting-your-game-in-azure&quot;&gt;Hosting your game in Azure&lt;/h3&gt;
+&lt;p&gt;Now you probably want to host that web somewhere. We do it with Microsoft Azure. You can get Azure through &lt;a href=&quot;https://azure.microsoft.com/en-us/pricing/member-offers/vs-dev-essentials/&quot;&gt;Visual Studio Dev Essentials&lt;/a&gt; or &lt;a href=&quot;https://azure.microsoft.com/en-us/pricing/member-offers/imagine/?cdn=disable&quot;&gt;Dreamspark&lt;/a&gt; if you are a student.&lt;/p&gt;
+
+&lt;p&gt;When you have Azure, open the portal at &lt;code class=&quot;highlighter-rouge&quot;&gt;portal.azure.com&lt;/code&gt; and create a new Web App by clicking &lt;code class=&quot;highlighter-rouge&quot;&gt;New&lt;/code&gt; at the left menu and selecting Web + Mobile &amp;gt; Web App. Give a name to your web for the URL and choose the subscription, resource group, OS, and service plan to use. If you don’t know what to choose, just leave the defaults and create a new resource group with the name of your game. :) I also recommend to click the “Pin to dashboard” checkbox at the bottom right above the &lt;code class=&quot;highlighter-rouge&quot;&gt;Create&lt;/code&gt; button so you can find it easily when using the Azure portal. Now click &lt;code class=&quot;highlighter-rouge&quot;&gt;Create&lt;/code&gt;!&lt;/p&gt;
+
+&lt;p&gt;The website is now ready but it is still empty. You can visit it and see it tells you “Your App Service app has been created”. To put your game inside this website you have a few methods available. I myself am a big fan of deploying from Github, or Onedrive for fast things, so I’ll cover that.&lt;/p&gt;
+
+&lt;h4 id=&quot;github-deployment&quot;&gt;Github deployment&lt;/h4&gt;
+&lt;p&gt;This method requires you to use Github, obviously. It isn’t very complex though, so you might want to try it. From the overview of your new Web App, search for &lt;code class=&quot;highlighter-rouge&quot;&gt;Deployment options&lt;/code&gt; in the left menu, click it and then click on &lt;code class=&quot;highlighter-rouge&quot;&gt;Choose Source&lt;/code&gt;. Choose Github and Azure will ask you for your Github credentials. It will then ask you to choose a project from Github and a branch from which to deploy. It is a good practice to have a &lt;code class=&quot;highlighter-rouge&quot;&gt;dev&lt;/code&gt; branch in your project to develope and leave the &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt; branch for the deployment, committing to it only working versions. And that is all, it might take a few minutes to sync but, after that, you can check your website again and you’ll see the game running!&lt;/p&gt;
+
+&lt;h4 id=&quot;onedrive-deployment&quot;&gt;Onedrive deployment&lt;/h4&gt;
+&lt;p&gt;This method can be a bit messy but it is easy and very fast. From the overview of your new Web App, search for &lt;code class=&quot;highlighter-rouge&quot;&gt;Deployment options&lt;/code&gt; in the left menu, click it and then click on &lt;code class=&quot;highlighter-rouge&quot;&gt;Choose Source&lt;/code&gt;. Choose Onedrive and most of the options will be already filled in. Azure will create a folder with the name of the web app in your Onedrive.&lt;/p&gt;
+
+&lt;p&gt;Go to Onedrive and you’ll probably see a new folder named “Applications” and “Azure Web Apps” inside it. There you have the folder that will be synced. Fill it with the contents of the web folder created by Clockwork so that the index.html is in the root. Include there too &lt;a href=&quot;https://gist.github.com/arcadiogarcia/90915843d14d53459148d77a630b93c0&quot;&gt;this Web.config file&lt;/a&gt; that makes Azure allow json files.&lt;/p&gt;
+
+&lt;p&gt;Go back to the Azure portal and back to &lt;code class=&quot;highlighter-rouge&quot;&gt;Deployment options&lt;/code&gt; and click on &lt;code class=&quot;highlighter-rouge&quot;&gt;Sync&lt;/code&gt;. When that’s ready, go visit your webpage again and the game will be running!&lt;/p&gt;
+</description>
+        <pubDate>Sun, 02 Jul 2017 19:49:11 +0200</pubDate>
+        <link>http://clockwork.js.org/blog/blog/bridges/tutorial/2017/07/02/webBridge.html</link>
+        <guid isPermaLink="true">http://clockwork.js.org/blog/blog/bridges/tutorial/2017/07/02/webBridge.html</guid>
+        
+        
+        <category>bridges</category>
+        
+        <category>tutorial</category>
+        
+      </item>
+    
+      <item>
+        <title>The gamepad package</title>
+        <description>&lt;p&gt;The gamepad is the standard input method in console games, but it can also be used in other devices such as PCs, and thanks to the &lt;code class=&quot;highlighter-rouge&quot;&gt;gamepad&lt;/code&gt; package it is really easy to incorporate it into your game.&lt;/p&gt;
+
+&lt;p&gt;First of all, you will need to add the package as a dependency to your game. You can do it using the command line &lt;code class=&quot;highlighter-rouge&quot;&gt;clockwork-tools&lt;/code&gt;, opening a command line in your project folder and typing&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;clockwork add gamepad&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Once you have added the dependency, you just need to spawn a &lt;code class=&quot;highlighter-rouge&quot;&gt;gamepad&lt;/code&gt; object in any level you want to detect gamepad input. Add it to the level like this:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;object&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;gamepad&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;gamepad&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;x=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;0&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;y=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;0&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/object&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;and you will be ready to start detecting keyboard input!&lt;/p&gt;
+
+&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;gamepad&lt;/code&gt; object you just created will trigger several events that let you know when the user is interacting with it, here is a component that will listen to all of them:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;gamepadListener&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;events&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;gamepadAxis&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;c1&quot;&gt;//This event is triggered each frame, sends the state of the thumbsticks&lt;/span&gt;
+                &lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//The id of the gamepad&lt;/span&gt;
+                &lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;thumbstick&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+                    &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//The id of the thumbstick&lt;/span&gt;
+                    &lt;span class=&quot;nx&quot;&gt;thumbstick&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//The x value of that thumbstick&lt;/span&gt;
+                    &lt;span class=&quot;nx&quot;&gt;thumbstick&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//The y value of that thumbstick&lt;/span&gt;
+                &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;gamepadTrigger&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;c1&quot;&gt;//This event is triggered each frame, sends the state of the triggers&lt;/span&gt;
+                &lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//The id of the gamepad&lt;/span&gt;
+                &lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;leftValue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//The value of the left trigger&lt;/span&gt;
+                &lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;rightValue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//The value of the right trigger&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;gamepadDown&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;c1&quot;&gt;//This event is triggered when a button is pressed&lt;/span&gt;
+                &lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//The id of the gamepad&lt;/span&gt;
+                &lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//The name of the button&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;gamepadUp&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;c1&quot;&gt;//This event is triggered when a button is released&lt;/span&gt;
+                &lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//The id of the gamepad&lt;/span&gt;
+                &lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//The name of the button&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+         &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;gamepadDisconnected&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;c1&quot;&gt;//This event is triggered when a gamepad is disconnected&lt;/span&gt;
+                &lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//The id of the gamepad&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Just like that, you can add your own logic to detect gamepad input and act acordingly.&lt;/p&gt;
+
+&lt;p&gt;Finally, remember that if you need to remember something about how the component is used, you can quickly access the package documentation from Visual Studio Code, running the &lt;code class=&quot;highlighter-rouge&quot;&gt;Browse Clockwork package documentation&lt;/code&gt; command.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 10 Jun 2017 19:49:11 +0200</pubDate>
+        <link>http://clockwork.js.org/blog/blog/gamepad/packages/2017/06/10/gamepad.html</link>
+        <guid isPermaLink="true">http://clockwork.js.org/blog/blog/gamepad/packages/2017/06/10/gamepad.html</guid>
+        
+        
+        <category>gamepad</category>
+        
+        <category>packages</category>
+        
+      </item>
+    
+      <item>
+        <title>The mouse package</title>
+        <description>&lt;p&gt;The mouse is one of the most popular input methods in PC games, and thanks to the &lt;code class=&quot;highlighter-rouge&quot;&gt;mouse&lt;/code&gt; package it is really easy to incorporate it into your game.&lt;/p&gt;
+
+&lt;p&gt;First of all, you will need to add the package as a dependency to your game. You can do it using the command line &lt;code class=&quot;highlighter-rouge&quot;&gt;clockwork-tools&lt;/code&gt;, opening a command line in your project folder and typing&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;clockwork add mouse&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Once you have added the dependency, you just need to spawn a &lt;code class=&quot;highlighter-rouge&quot;&gt;mouse&lt;/code&gt; object in any level you want to detect mouse input. Add it to the level like this:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;object&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;mouse&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;mouse&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;x=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;0&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;y=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;0&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/object&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;and you will be ready to start detecting mouse input!&lt;/p&gt;
+
+&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;mouse&lt;/code&gt; object you just created will trigger the &lt;code class=&quot;highlighter-rouge&quot;&gt;click&lt;/code&gt; event whenever the mouse is pressed or a touch screen is tapped. For example, this component will log the mouse clicks:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nl&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;mouseLogger&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;events&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;click&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;engine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;debug&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Mouse button &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;button&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot; clicked at (&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;,&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;)&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+                &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Just like that, you can add your own logic to process the mouse input.&lt;/p&gt;
+
+&lt;p&gt;Maybe, instead of knowing when the mouse is clicked and its coordinates, you are interested in detecting when the mouse hovers and clicks on other objects in your game. The mouse component provides a second way of detecting input more suited for those scenarios. If you also add the &lt;a href=&quot;/blog/collisions/packages/2017/06/10/pointBoxCollision2D.html&quot;&gt;pointBoxCollisionPackage&lt;/a&gt;, you can detect when the mouse hovers and clicks specific objects, just like this:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nl&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;button&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;events&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;#collide&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;instanceOf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;mouse&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;shape2tag&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;hover&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                        &lt;span class=&quot;c1&quot;&gt;//The mouse cursor is over the object&lt;/span&gt;
+                    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+                    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;instanceOf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;mouse&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;shape2tag&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;click&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                        &lt;span class=&quot;c1&quot;&gt;//The object has been clicked&lt;/span&gt;
+                    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+                &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;collision&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;s2&quot;&gt;&quot;box&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+                &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;#tag&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;hitbox&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;x&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;y&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;w&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;h&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Finally, remember that if you need to remember something about how the component is used, you can quickly access the package documentation from Visual Studio Code, running the &lt;code class=&quot;highlighter-rouge&quot;&gt;Browse Clockwork package documentation&lt;/code&gt; command.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 10 Jun 2017 19:48:11 +0200</pubDate>
+        <link>http://clockwork.js.org/blog/blog/mouse/packages/2017/06/10/mouse.html</link>
+        <guid isPermaLink="true">http://clockwork.js.org/blog/blog/mouse/packages/2017/06/10/mouse.html</guid>
+        
+        
+        <category>mouse</category>
+        
+        <category>packages</category>
+        
+      </item>
+    
+      <item>
+        <title>The boxBoxCollision2D package</title>
+        <description>&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;boxBoxCollision2D&lt;/code&gt; package registers a collision detector which will enable you to detect when a object shaped like a 2D box overlaps with other object shaped like a 2D box.&lt;/p&gt;
+
+&lt;p&gt;First of all, you will need to add the package as a dependency to your game. You can do it using the command line &lt;code class=&quot;highlighter-rouge&quot;&gt;clockwork-tools&lt;/code&gt;, opening a command line in your project folder and typing&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;clockwork add boxBoxCollision2D&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Once you have added the dependency, you need to modify the components whose collisions do you want to detect:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nl&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;boxShapedObject1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;events&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+              &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;#collide&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                  &lt;span class=&quot;c1&quot;&gt;//Do something&lt;/span&gt;
+              &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+         &lt;span class=&quot;na&quot;&gt;collision&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;s2&quot;&gt;&quot;box&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+                &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;x&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;y&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;w&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;h&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;#tag&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;nameOfTheBox&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;boxShapedObject2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;events&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:[&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+              &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;#collide&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                  &lt;span class=&quot;c1&quot;&gt;//Do something&lt;/span&gt;
+              &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+         &lt;span class=&quot;na&quot;&gt;collision&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;s2&quot;&gt;&quot;box&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+                &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;x&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;y&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;w&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;h&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;#tag&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;nameOfTheBox&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Just like that, you can add as many boxes and points to the components as you like own logic to detect keyboard input and act acordingly.&lt;/p&gt;
+
+&lt;p&gt;Each box has a unique identifier (&lt;code class=&quot;highlighter-rouge&quot;&gt;#tag&lt;/code&gt;),  a position (x,y values) which will be realtive to the object position, and a width and height specified.&lt;/p&gt;
+
+&lt;p&gt;Finally, remember that if you need to remember something about how the component is used, you can quickly access the package documentation from Visual Studio Code, running the &lt;code class=&quot;highlighter-rouge&quot;&gt;Browse Clockwork package documentation&lt;/code&gt; command.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 10 Jun 2017 19:47:11 +0200</pubDate>
+        <link>http://clockwork.js.org/blog/blog/collisions/packages/2017/06/10/boxBoxCollision2D.html</link>
+        <guid isPermaLink="true">http://clockwork.js.org/blog/blog/collisions/packages/2017/06/10/boxBoxCollision2D.html</guid>
+        
+        
+        <category>collisions</category>
+        
+        <category>packages</category>
+        
+      </item>
+    
+      <item>
+        <title>The pointBoxCollision2D package</title>
+        <description>&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;pointBoxCollision2D&lt;/code&gt; package registers a collision detector which will enable you to detect when a object shaped like a 2D point is inside an object shaped like a 2D box.&lt;/p&gt;
+
+&lt;p&gt;First of all, you will need to add the package as a dependency to your game. You can do it using the command line &lt;code class=&quot;highlighter-rouge&quot;&gt;clockwork-tools&lt;/code&gt;, opening a command line in your project folder and typing&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;clockwork add pointBoxCollision2D&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Once you have added the dependency, you need to modify the components whose collisions do you want to detect:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nl&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;pointShapedObject&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;events&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+              &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;#collide&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                  &lt;span class=&quot;c1&quot;&gt;//Do something&lt;/span&gt;
+              &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+         &lt;span class=&quot;na&quot;&gt;collision&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;s2&quot;&gt;&quot;point&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+                &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;x&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;y&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;#tag&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;nameOfThePoint&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nl&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;boxShapedObject&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;events&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+              &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;#collide&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                  &lt;span class=&quot;c1&quot;&gt;//Do something&lt;/span&gt;
+              &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+         &lt;span class=&quot;na&quot;&gt;collision&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;s2&quot;&gt;&quot;box&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+                &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;x&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;y&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;w&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;h&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;#tag&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;nameOfTheBox&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Just like that, you can add as many boxes and points to the components as you like own logic to detect keyboard input and act acordingly.&lt;/p&gt;
+
+&lt;p&gt;Each shape has a unique identifier (&lt;code class=&quot;highlighter-rouge&quot;&gt;#tag&lt;/code&gt;), and a position (x,y values) which will be realtive to the object position. The box will also need to have a width and height specified.&lt;/p&gt;
+
+&lt;p&gt;Finally, remember that if you need to remember something about how the component is used, you can quickly access the package documentation from Visual Studio Code, running the &lt;code class=&quot;highlighter-rouge&quot;&gt;Browse Clockwork package documentation&lt;/code&gt; command.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 10 Jun 2017 19:46:11 +0200</pubDate>
+        <link>http://clockwork.js.org/blog/blog/collisions/packages/2017/06/10/pointBoxCollision2D.html</link>
+        <guid isPermaLink="true">http://clockwork.js.org/blog/blog/collisions/packages/2017/06/10/pointBoxCollision2D.html</guid>
+        
+        
+        <category>collisions</category>
+        
+        <category>packages</category>
+        
+      </item>
+    
+  </channel>
+</rss>
