@@ -6,8 +6,8 @@
 </description>
     <link>http://clockwork.js.org/blog/blog/</link>
     <atom:link href="http://clockwork.js.org/blog/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 05 Sep 2017 15:28:20 +0200</pubDate>
-    <lastBuildDate>Tue, 05 Sep 2017 15:28:20 +0200</lastBuildDate>
+    <pubDate>Wed, 20 Sep 2017 16:53:17 +0200</pubDate>
+    <lastBuildDate>Wed, 20 Sep 2017 16:53:17 +0200</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -19,11 +19,11 @@
 &lt;p&gt;Before getting into details about it, let’s address the elephant in the room: &lt;em&gt;Why do we need yet another game engine&lt;/em&gt;? The best way of addressing that question is listing the objectives of the project:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Develop a platform that is not only open source but designed from the ground up to be more open (as opossed to more traditional ‘monolithical’ game engines), so you choose / build your own rendering library, physics, native API wrappers…&lt;/li&gt;
-  &lt;li&gt;Provide an end-to-end developer-friendly experience, with tools that ease common tasks such as deploying, debugging, managing dependencies, publishing… , instead of just providing a .js library and asking the developer to bring their own build tools.&lt;/li&gt;
-  &lt;li&gt;Expose an elegant, small (and easy to learn!) API, designed around message passing, that makes writing game logic a breeze, and also provide an easy way to use composition and inheritance.&lt;/li&gt;
-  &lt;li&gt;Rather than trying to minimize the amount of code that has to be writen by the developer, its top priority should be to maximize the flexibility of the engine.&lt;/li&gt;
-  &lt;li&gt;Buildind the platform exclusively on top of web technologies so it can be easily ported to any platform and adapted to any workflow.&lt;/li&gt;
+  &lt;li&gt;Develop a platform that is not only open source but designed from the ground up to be more &lt;strong&gt;open&lt;/strong&gt; (as opossed to more traditional ‘monolithical’ game engines), so you choose / build your own rendering library, physics, native API wrappers…&lt;/li&gt;
+  &lt;li&gt;Provide an end-to-end &lt;strong&gt;developer-friendly&lt;/strong&gt; experience, with tools that ease common tasks such as deploying, debugging, managing dependencies, publishing… , instead of just providing a .js library and asking the developer to bring their own build tools.&lt;/li&gt;
+  &lt;li&gt;Expose an &lt;strong&gt;elegant&lt;/strong&gt;, small (and easy to learn!) API, designed around message passing, that makes writing game logic a breeze, and also provide an easy way to use composition and inheritance.&lt;/li&gt;
+  &lt;li&gt;Rather than trying to minimize the amount of code that has to be writen by the developer, its top priority should be to maximize the &lt;strong&gt;flexibility&lt;/strong&gt; of the engine.&lt;/li&gt;
+  &lt;li&gt;Build the platform exclusively on top of web technologies so it can be &lt;strong&gt;easily ported&lt;/strong&gt; to any platform and adapted to any workflow.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;how-to-get-started&quot;&gt;How to get started&lt;/h1&gt;
@@ -65,7 +65,7 @@
 
 &lt;p&gt;You are more than welcome to head to &lt;a href=&quot;https://github.com/ClockworkDev&quot;&gt;our Github page&lt;/a&gt; and start forking repos, opening issues and sending PRs.&lt;/p&gt;
 
-&lt;p&gt;In case you would like to get involved but don’t know where to start,here are some work items were help would be appreciated:&lt;/p&gt;
+&lt;p&gt;In case you would like to get involved but don’t know where to start,here are some work items where help would be appreciated:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -84,9 +84,9 @@
 
 &lt;p&gt;However, I also hope that some of the people reading this post (that’s you!) decide to give it a try, some of them provide valuable feedback, and some of them even contribute to the project with their own ideas and code, so we can together keep empowering HTML5 gamedevs to make awesome projects!&lt;/p&gt;
 </description>
-        <pubDate>Fri, 01 Sep 2017 18:00:00 +0200</pubDate>
-        <link>http://clockwork.js.org/blog/blog/news/2017/09/01/clockworkLaunch.html</link>
-        <guid isPermaLink="true">http://clockwork.js.org/blog/blog/news/2017/09/01/clockworkLaunch.html</guid>
+        <pubDate>Wed, 20 Sep 2017 01:00:00 +0200</pubDate>
+        <link>http://clockwork.js.org/blog/blog/news/2017/09/20/clockworkLaunch.html</link>
+        <guid isPermaLink="true">http://clockwork.js.org/blog/blog/news/2017/09/20/clockworkLaunch.html</guid>
         
         
         <category>news</category>

@@ -201,7 +201,8 @@ pre {
 .post-header-pretty {
   background: black;
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  margin-bottom: 30px; }
 
 .post-header-content {
   padding: 50px;
